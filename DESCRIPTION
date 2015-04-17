@@ -3,7 +3,7 @@ Type: Package
 Title: What the package does (short line)
 Version: 1.0
 Date: 2015-04-17
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Author: Jeremiah MF Kelly 
+Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License:  GPL-2,   GPL-3 
