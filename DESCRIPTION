@@ -1,9 +1,9 @@
 Package: Dark
 Type: Package
-Title: What the package does (short line)
+Title: Fits the Mahroo Lamb and Pugh (MLP) model of dark adaptaion to data
 Version: 1.0
 Date: 2015-04-17
 Author: Jeremiah MF Kelly 
 Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
-Description: More about what it does (maybe more than one line)
-License:  GPL-2,   GPL-3 
+Description: Dark adaptation is the recovery of visual sensitivity in a dark environemnt, the data can be described by a physiological model. The functions in this package take that data and find the parameters of the model that 'best fit' the data. 
+License:  GPL-2,   GPL-3
