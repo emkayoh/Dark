@@ -1,6 +1,6 @@
 Package: Dark
 Type: Package
-Title: Fits the Mahroo Lamb and Pugh (MLP) model of dark adaptation to data
+Title: Analysis of dark adaptation data
 Version: 0.9.0
 Date: 2015-04-17
 Author: Jeremiah MF Kelly 
