@@ -39,5 +39,8 @@ T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress 
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
+time<- seq(0,20, by=0.33)
+tmp<-TestData(time)
+
+
 }
