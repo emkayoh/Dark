@@ -25,6 +25,8 @@ The functions rely upon a *dark* list or object. This object is created by the f
 \author{
 Jeremiah MF Kelly
 
+The University of Manchester
+
 Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 }
 \references{
