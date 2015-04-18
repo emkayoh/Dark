@@ -9,14 +9,14 @@ This script creates data in the form of a 'dark' object from specified times, pa
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-object <- TestData(x, theta, sse, repeatable)
+TestData(x, theta, sse, repeatable)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ %%     ~~Describe \code{x} here~~
   the times at which obervations are made.
 }
-  \item{theta}{ %%     ~~Describe \code{theta} here~~
+  \item{theta}{%%     ~~Describe \code{theta} here~~
   the parameters of the Mahroo Lamb Pugh model
   %% insert table here
   \tabular{lccc}{
@@ -31,11 +31,11 @@ theta[7]: \tab beta point \tab 13 \tab (log luminance)\cr
 } 
 
 }
-  \item{sse}{ the variability of the data
-%%     ~~Describe \code{sse} here~~
+  \item{sse}{%%     ~~Describe \code{sse} here~~
+  the variability of the data
 }
-  \item{repeatable}{ a boolean flag that ensures that the function can return the same values each time it is called. 
-%%     ~~Describe \code{repeatable} here~~
+  \item{repeatable}{%%     ~~Describe \code{repeatable} here~~
+  a boolean flag that ensures that the function can return the same values each time it is called. 
 }
 }
 \details{

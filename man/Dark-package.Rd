@@ -10,7 +10,7 @@
 \tabular{ll}{
 Package: \tab Dark\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 0.9.0\cr
 Date: \tab 2015-04-17\cr
 License: \tab GPL-2\cr
 } 
@@ -35,10 +35,10 @@ O. Mahroo and T. Lamb. Recovery of the human photopic electroretinogram after bl
 T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in Retinal and Eye Research, 23(3):307-380, 2004.
 }
 \keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
+%% \seealso{
+%% ~~ Optional links to other man pages, e.g. ~~
+%% ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+%% }
 \examples{
 time<- seq(0,20, by=0.33)
 tmp<-TestData(time)
