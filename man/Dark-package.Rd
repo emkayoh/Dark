@@ -34,7 +34,6 @@ O. Mahroo and T. Lamb. Recovery of the human photopic electroretinogram after bl
 
 T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in Retinal and Eye Research, 23(3):307-380, 2004.
 }
-
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~
