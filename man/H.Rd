@@ -5,7 +5,7 @@
 This is a simple switch function.
 }
 \description{
-This function is used to transition from 'off' to 'on'. It is a logistic function that maps 
+This function is used to transition from 'off' to 'on'. 
 }
 \usage{
 H(x, k = 100, t)
@@ -36,10 +36,10 @@ is the time at which the transition occurs.
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jeremiah MF Kelly
 }
 \note{
-%%  ~~further notes~~
+H is a logistic function that maps inputs to a values between zero and one
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
