@@ -2,9 +2,10 @@
 \alias{TestData}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-This script generates a dark object 
+Data that can be used to test other scripts.
 }
 \description{
+This script creats data from specified time, parameters, and level of variability.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
