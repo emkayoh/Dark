@@ -5,20 +5,31 @@
 Data that can be used to test other scripts.
 }
 \description{
-This script creats data from specified time, parameters, and level of variability.
+This script creates data in the form of a 'dark' object from specified times, parameters, and level of variability. It is used for testing and developing other scripts. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-TestData(x, theta, sse, repeatable)
+object <- TestData(x, theta, sse, repeatable)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ the times at which obervation are made.
-%%     ~~Describe \code{x} here~~
+  \item{x}{ %%     ~~Describe \code{x} here~~
+  the times at which obervations are made.
 }
-  \item{theta}{ the parameters of the Mahroo Lamb Pugh model
+  \item{theta}{ %%     ~~Describe \code{theta} here~~
+  the parameters of the Mahroo Lamb Pugh model
   %% insert table here
-%%     ~~Describe \code{theta} here~~
+  \tabular{lccc}{
+theta : \tab parameter \tab default  \tab Units\cr\cr
+theta[1]: \tab cone threshold \tab -1 \tab (log lum)\cr
+theta[2]: \tab cone coefficient \tab 1 \tab (log lum)\cr
+theta[3]: \tab cone time constant \tab 1 \tab (minutes)\cr
+theta[4]: \tab S2  \tab -0.24 \tab (log lum/ minute)\cr
+theta[5]: \tab alpha point \tab 6 \tab (minutes)\cr
+theta[6]: \tab -(S2 + S3) \tab 0.20 \tab (log luminance)\cr
+theta[7]: \tab beta point \tab 13 \tab (log luminance)\cr
+} 
+
 }
   \item{sse}{ the variability of the data
 %%     ~~Describe \code{sse} here~~
@@ -41,7 +52,7 @@ TestData(x, theta, sse, repeatable)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jeremiah MF Kelly
 }
 \note{
 %%  ~~further notes~~
@@ -53,36 +64,10 @@ TestData(x, theta, sse, repeatable)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+x<- seq(0,20, by=0.33)
+tmp<-TestData(x)
+tmp
 
-## The function is currently defined as
-function (x, theta, sse, repeatable) 
-{
-    if (missing(repeatable)) 
-        repeatable = F
-    if (missing(sse)) 
-        sse = 0.03
-    if (missing(theta)) 
-        theta <- c(-1, 1, 1, -0.24, 6, 0.2, 13)
-    if (length(theta) == 3) 
-        theta <- c(theta, 0, 0, 0, 0)
-    if (length(theta) == 5) 
-        theta <- c(theta, 0, 0)
-    if (repeatable) 
-        set.seed(143)
-    Len <- length(x)
-    Noise <- rnorm(Len, 0, sqrt(sse))
-    Y <- theta[1] + theta[2] * exp(-x * theta[3]) + theta[4] * 
-        (x - theta[5]) * H(x, 10, theta[5]) + theta[6] * (x - 
-        theta[7]) * H(x, 10, theta[7])
-    tmp <- list(call = match.call(), time = x, thrs = (Y + Noise), 
-        resid = Noise, fit = Y, thet = theta, sse = sse, val = var(Noise), 
-        data = paste("Test_data_", sse, sep = ""))
-    class(tmp) = "dark"
-    tmp
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
