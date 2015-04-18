@@ -4,8 +4,7 @@
 \docType{package}
 \title{Dark: A package to analyse dark adaptation data
 }
-\description{A series of scripts to find the parameters of dark adaptation.
-}
+\description{A series of scripts to find the parameters of dark adaptation.}
 \details{
 \tabular{ll}{
 Package: \tab Dark\cr
