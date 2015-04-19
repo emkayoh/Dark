@@ -1,5 +1,7 @@
 P7c<-function (a,X){
   # Seven Param Exp + Bilinear and two fixed transition rates
+  x<- .GlobalEnv$x
+  y<- .GlobalEnv$y # explicitly locating the values
   if(missing(X)){
     if(length(a)==1){
       list(Pn=7L,Mod='P7c')
