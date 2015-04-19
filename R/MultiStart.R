@@ -1,5 +1,6 @@
-MultiStart <- function(P, repeats, draw, spread, debug) {
-   mFn <- c(1, 1, P3, 1, P5c, 1, P7c)
+MultiStart <- function(obj, repeats, draw, spread, debug) {
+
+  mFn <- c(1, 1, P3, 1, P5c, 1, P7c) # not sure if this is implemented !
   
   
   if (missing(repeats)) 
@@ -20,24 +21,23 @@ MultiStart <- function(P, repeats, draw, spread, debug) {
   val = NULL
   Pn = NULL
   AIC = NULL
-  if (is.list(P)) {
-    Res <- P
+  if (is.list(obj)) { # checks that obj is a list but doesnt report failure todo
+    Res <- obj
     Res$call = NULL
-    x <- P$time
-    y <- P$thrs
-    p <- P$opt
-    val <- P$val
-    if (is.null(P$opt)) 
-      p = P$init
-    Pn <- P$Pn
-    if (is.null(P$Pn)) 
+    x <- obj$time
+    y <- obj$thrs
+    p <- obj$opt
+    val <- obj$val
+    if (is.null(obj$opt)) 
+      p = obj$init
+    Pn <- obj$Pn
+    if (is.null(obj$Pn)) 
       Pn = 7
-    AIC <- P$AIC[1:7]
-  } else {
-    x <<- x
-    y <<- y
-    p <- P
+    AIC <- obj$AIC[1:7]
   }
+  
+  .GlobalEnv$x<-x
+  .GlobalEnv$y<-y
   
   if (debug) 
     print("+++ object processed OK")
@@ -46,8 +46,7 @@ MultiStart <- function(P, repeats, draw, spread, debug) {
   if (debug) 
     print(paste("+++ Using the ", Pn, " parameter model ", sep = ""))
   
-  OptJK <- function(a) {
-    
+  OptJK <- function(a) {   
     tmp <- numeric(9)
     # two iterations of the optim fn could allow 1000 cycles, will compare later
     X = optim(a, Fn)
@@ -108,8 +107,7 @@ MultiStart <- function(P, repeats, draw, spread, debug) {
     plot(x, y)
     lines(x, fit)
   }
-  
-  #return(list(Out=O[1:5,], P=P))
+  #### create output object 
   Res$call <- match.call()
   Res$opt = p
   Res$time = x
@@ -117,14 +115,17 @@ MultiStart <- function(P, repeats, draw, spread, debug) {
   Res$resid = resid
   Res$fit = fit
   Res$val = val
-  Res$data = P$data
-  Res$Mod = P$Mod
-  Res$Pn = P$Pn
+  Res$data = obj$data
+  Res$Mod = obj$Mod
+  Res$Pn = obj$Pn
   Res$AIC = AIC
   Res$R2 <- 1 - (var(resid)/var(y))
   
   if (debug) 
     Res$O <- O
+  
+#### clear up the global variables we created    
+on.exit(rm(list=c('x','y'),envir = .GlobalEnv))
   class(Res) = "dark"
   return(Res)
 }
