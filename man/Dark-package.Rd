@@ -2,8 +2,7 @@
 \alias{Dark-package}
 \alias{Dark}
 \docType{package}
-\title{Dark: A package to analyse dark adaptation data
-}
+\title{Dark: A package to analyse dark adaptation data}
 \description{A series of scripts to find the parameters of dark adaptation.}
 \details{
 \tabular{ll}{
@@ -29,7 +28,7 @@ The University of Manchester
 Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 }
 \references{
-%% O. Mahroo and T. Lamb. Recovery of the human photopic electroretinogram after bleaching exposures: estimation of pigment regeneration kinetics. The Journal of Physiology, 554(2):417, 2004.
+O. Mahroo and T. Lamb. Recovery of the human photopic electroretinogram after bleaching exposures: estimation of pigment regeneration kinetics. The Journal of Physiology, 554(2):417, 2004.
 %%
 %%T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in Retinal and Eye Research, 23(3):307-380, 2004.
 }
@@ -39,11 +38,16 @@ Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 %% ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %% }
 \examples{
-time<- seq(0,20, by=0.33)
-tmp<-TestData(time)
+Time<- seq(0,20, by=0.33)
+tmp<- TestData(Time)
+P<-Start(tmp,10)
+MSC<-ModelSelect(tmp, P)
+tmp2<-BestFit(tmp, MSC)
+tmp3<-MultiStart(tmp2,100)
+BootDark(tmp3,100)
 
 
 }
 
 
-https://github.com/emkayoh/Dark
+%% https://github.com/emkayoh/Dark
