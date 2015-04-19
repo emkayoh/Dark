@@ -24,6 +24,7 @@ The minimum time in seconds between responses. Thresholds set within two seconds
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
+In early data collected with analogue equipment it was psossible for a subject to return multiple button presses when setting just one threshold. This data is characterised by clusters of points within a very short time. This function removes the exptra presses. It is rarely need for data collected from digital equipment. 
 }
 \value{
 Returns an object with the same elements as 'tmp' but with object$time and object$thrs altered. 
@@ -33,23 +34,35 @@ Returns an object with the same elements as 'tmp' but with object$time and objec
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{
 %%  ~~who you are~~
-Jeremiah MF Kelly
+Dr Jeremiah MF Kelly
+
+Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
-\note{
+
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
+set.seed(123)
+Time  <-c(0, 0.02, 1, 2,  3, 3.02,  5, 6, 6.02, 7, 9, 9.02, 11, 
+12, 12.02, 13, 15, 15.02, 16, 18, 18.02, 20) 
+# with duplicated times
+
+tmp <- TestData(Time, sse=0.05) 
+plot(tmp$time, tmp$thrs, ylim=c(-4,0))
+tmp <- Declutter(tmp)
+points(tmp$time, tmp$thrs, col='red', pch=16)
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

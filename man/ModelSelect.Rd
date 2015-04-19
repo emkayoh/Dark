@@ -25,7 +25,11 @@ Is a matrix with seven columns and at least one row. The values of each element 
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-The script uses each row of 'P' to calculate a the sum of squared residuals for the given times (obj$time) and thresholds (obj$thrs). Then the row which yields the lowest SSE is chosen as a starting point for optimisation. The optimised parameters are stored in 'param' and once the three parameter arrays have been found their AICc scores are found and returned as AIC.
+This is a \emph{brute-force} method to make a first estimate of the optimal model parameters. 
+
+The matrix 'P' holds rows of possible parameter values.
+Each row is passed to the 3, 5, and 7 parameter models and the sum of residuals squared is calculated for the given times (obj$time) and thresholds (obj$thrs).
+So for each row in 'P' there is a score for each model. Then for each model the row which yields the lowest SSE is chosen as a starting point for optimisation. The optimised parameters are stored in 'param' and once the three parameter arrays have been found their AICc scores are found and returned as AIC.
 }
 \value{
 Returns a list 
@@ -38,19 +42,23 @@ Returns a list
 }
 \references{
 %% ~put references to the literature/web site here ~
+\url{http://en.wikipedia.org/wiki/Brute-force_search}
 }
 \author{
 %%  ~~who you are~~
+Dr Jeremiah MF Kelly
+
+Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
 tmp<- TestData(0:20)
 P<-Start(tmp)

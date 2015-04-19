@@ -7,14 +7,19 @@ MultiStart
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Given a dark object 'obj', this function repeatedly (repeats) optimises the parameters in the vicinity of the seed array. The width of the search is dependent upon the value of 'spread'. 'P' can also be a 'dark' object. 
+Given a \emph{dark} object, \code{obj}, this function repeatedly optimises the parameters in the vicinity of the seed array. The width of the search is dependent upon the value of \code{spread}.
 }
 \usage{
 MultiStart(obj, repeats, draw, spread, debug)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{obj}{A 'dark' object containing at least P$time, P$thrs and P$init an initial estimate of the parameters of dark adaptation. 
+  \item{obj}{A \emph{dark} object containing at least;\tabular{ll}{
+obj$time \tab time\cr
+obj$thrs \tab thresholds\cr
+obj$init \tab an initial estimate of the parameters of dark adaptation.\cr
+} 
+
 %%     ~~Describe \code{P} here~~
 }
   \item{repeats}{The number of times the algorithm is repeated
@@ -32,8 +37,24 @@ MultiStart(obj, repeats, draw, spread, debug)
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
+To reduce the possibility of selecting non-optimal parameter estimates, the optimisation is repeated in the region of initial estimates. The 
 }
-\value{
+\value{Returns a list;
+\item{time}{times of threshold setting}
+ \item{out$thrs}{observed thresholds}
+ \item{out$resid}{residuals}
+ \item{out$fit}{optimal fitted values}
+ \item{out$thet}{seed parameters if test data}
+ \item{out$sse}{sum of squared residuals if test data}
+ \item{out$data}{source of the data}
+ \item{out$opt}{optimal parameter estimates of the chosen model}
+ \item{out$Mod}{name of the optimal model}
+ \item{out$Pn}{the number of parameters needed to describe the data}
+ \item{out$AIC}{array of AICc scores}
+ \item{out$val}{calculated sum of squared residuals}
+ \item{out$R2}{the coefficient of determination}
+ \item{out$warning}{if none of the nearby values converge}
+ \item{out$call}{updates the function call label}
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -42,135 +63,29 @@ MultiStart(obj, repeats, draw, spread, debug)
 }
 \references{
 %% ~put references to the literature/web site here ~
+Nelder, J.A.; Mead, R. 1965: A simplex for function minimization. Comput. J. 7, 308-313
 }
 \author{
 %%  ~~who you are~~
+Dr Jeremiah MF Kelly
+
+Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-\seealso{
+%\seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-}
+%}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (P, repeats, draw, spread, debug) 
-{
-    mFn <- c(1, 1, P3, 1, P5c, 1, P7c)
-    if (missing(repeats)) 
-        repeats = 400
-    if (missing(draw)) 
-        draw = FALSE
-    if (missing(spread)) 
-        spread = 0.15
-    if (missing(debug)) 
-        debug = F
-    if (debug) 
-        print("+++ missing values assigned OK")
-    resid = NULL
-    fit = NULL
-    val = NULL
-    Pn = NULL
-    AIC = NULL
-    if (is.list(P)) {
-        Res <- P
-        Res$call = NULL
-        x <- P$time
-        y <- P$thrs
-        p <- P$opt
-        val <- P$val
-        if (is.null(P$opt)) 
-            p = P$init
-        Pn <- P$Pn
-        if (is.null(P$Pn)) 
-            Pn = 7
-        AIC <- P$AIC[1:7]
-    }
-    else {
-        x <<- x
-        y <<- y
-        p <- P
-    }
-    if (debug) 
-        print("+++ object processed OK")
-    Fn <- mFn[[Pn]]
-    if (debug) 
-        print(paste("+++ Using the ", Pn, " parameter model ", 
-            sep = ""))
-    OptJK <- function(a) {
-        tmp <- numeric(9)
-        X = optim(a, Fn)
-        X = optim(X$par, Fn)
-        X = optim(X$par, Fn)
-        tmp[1:Pn] = X$par
-        tmp[8] = X$val
-        tmp[9] = X$con
-        tmp
-    }
-    Par <- matrix(p * rnorm(7 * repeats, 1, spread), 7, repeats)
-    O <- t(apply(Par, 2, OptJK))
-    input <- numeric(9)
-    input[1:7] = p
-    input[8] = val
-    input[9] = 0
-    O <- rbind(input, O)
-    if (debug) 
-        print(head(O))
-    Test <- sum(O[, 9] == 0)
-    if (debug) 
-        print(paste("+++ the test has boolean value ", Test, 
-            sep = ""))
-    if (Test) {
-        idx <- O[, 9] == 0
-        O <- O[idx, ]
-    }
-    if (debug) 
-        print(head(idx))
-    if (length(O) != 9) {
-        idx <- order(O[, 8])
-        O <- O[idx, ]
-        val <- O[1, 8]
-        p <- O[1, 1:Pn]
-    }
-    else {
-        val <- O[8]
-        p <- O[1:Pn]
-    }
-    if (length(O) == 9) 
-        Res$warning <- "+++ None of the jittered values converged"
-    if (debug) 
-        print("+++ Ordered index made")
-    val = val[[1]]
-    fit <- Fn(p, x)
-    resid <- (y - fit)
-    if (draw) {
-        plot(x, y)
-        lines(x, fit)
-    }
-    Res$call <- match.call()
-    Res$opt = p
-    Res$time = x
-    Res$thrs = y
-    Res$resid = resid
-    Res$fit = fit
-    Res$val = val
-    Res$data = P$data
-    Res$Mod = P$Mod
-    Res$Pn = P$Pn
-    Res$AIC = AIC
-    Res$R2 <- 1 - (var(resid)/var(y))
-    if (debug) 
-        Res$O <- O
-    class(Res) = "dark"
-    return(Res)
-  }
+tmp<-TestData(0:20)
+P<- Start(tmp)
+MSC<-ModelSelect(tmp, P)
+tmp<-BestFit(tmp, MSC)
+MultiStart(tmp, 50)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

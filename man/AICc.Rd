@@ -6,7 +6,7 @@ Akaike information criterion
 %%  ~~function to do ... ~~
 }
 \description{
-The Akaike information criterion corrected for small sample size is a measure of teh relative quality of a model. See http://en.wikipedia.org/wiki/Akaike_information_criterion.  The AICc is calculated from a 'dark' object. %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+The Akaike information criterion corrected for small sample size is a measure of the relative quality of a model.  The AICc is calculated from a 'dark' object. %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 AICc(obj)
@@ -18,35 +18,45 @@ This object must have at least the following elements:
 \tabular{ll}{
 obj$time \tab to calculate the number of observations\cr
 obj$Pn \tab the number of parameters in the model\cr
-obj$val \tab the sum of squred residual error\cr
+obj$val \tab the sum of squared residual error\cr
 }
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
+The value returned is an indication of the information lost by fitting a particular model to the data, and is only of merit when compared to the value from another model.
+
+%%  ~Describe these
+%%  \item{comp1 }{Description of 'comp2'}
 %% ...
 }
 \references{
 %% ~put references to the literature/web site here ~
+See \url{http://en.wikipedia.org/wiki/Akaike_information_criterion}. 
+
+K. Burnham and D. Anderson. Model selection and multi-model inference: a practical information- theoretic approach. Springer, 2002.
+
+Sakamoto, Y., Ishiguro, M., and Kitagawa G. (1986). Akaike Information Criterion Statistics. D. Reidel Publishing Company.
 }
 \author{
 %%  ~~who you are~~
-Jeremiah MF Kelly
+Dr Jeremiah MF Kelly
+
+Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
-\note{
+%\note{
 %%  ~~further notes~~
-}
+%}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+%% ~~objects to See Also as
+\code{\link{AIC}}
+%%, ~~~
+
 }
 \examples{
 tmp <- TestData(0:20)

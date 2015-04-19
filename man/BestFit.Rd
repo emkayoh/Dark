@@ -6,9 +6,9 @@
 BestFit
 }
 \description{
-This script takes a dark object, a list of parameters and AICc scores from ModelSelect and returns optimised values for the parameter estimates. These parameters are accurate and analysis of the data can be halted here if wished.
+This script takes a dark object, a list of parameters and AICc scores from \code{ModelSelect} to chose a model and then return optimised values for the parameter estimates. Analysis of the data can be halted here if wished.
 
-However, a MultiStart check can be usefulif it is suspected that a local minimum has been found. Furthermore, BootDark will provide confidence intervals for the parameter estimates. 
+However, a \code{MultiStart} check can be useful if it is suspected that a local minimum has been found. Furthermore, \code{BootDark} will provide confidence intervals for the parameter estimates. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -19,16 +19,16 @@ BestFit(obj, MSC, draw)
   \item{obj}{A dark object
 %%     ~~Describe \code{obj} here~~
 }
-  \item{MSC}{A list from the function ModelSelect
+  \item{MSC}{A list from the function \code{ModelSelect}
 %%     ~~Describe \code{MSC} here~~
 }
-  \item{draw}{A flag to indicate whether a figure should be drwan.
+  \item{draw}{A flag to indicate whether a figure should be drawn.
 %%     ~~Describe \code{draw} here~~
 }
 }
-\details{
+%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%}
 \value{A list with the following elements:
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -50,20 +50,24 @@ BestFit(obj, MSC, draw)
 \item{AIC}{AICc scores for the three models fitted} 
 \item{R2}{an indication of the 'goodness' of fit}
 }
-\references{
+%\references{
 %% ~put references to the literature/web site here ~
-}
+%}
 \author{
 %%  ~~who you are~~
+Dr Jeremiah MF Kelly
+
+Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
 \note{
 %%  ~~further notes~~
+This function makes extensive use of \code{optim}.
 }
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{optim}}
 }
 \examples{
 tmp <- TestData(0:20)
