@@ -1,14 +1,14 @@
 BootDark <- function(obj, R, graph) {
-  source('~/Dropbox/JMFK-PostDoc/Papers_In_Progress/Z_Analogue_DA/R_Code/LPvJK_Code/Models2.R')
+  .GlobalEnv$x<-obj$time
+  .GlobalEnv$y<-obj$thrs
+  
   mFn<-c(1,1,P3,1,P5c,1,P7c)
-  
-  #library(MASS) # Bootstrap
-  
+
   set.seed(1234)
   if (missing(R)) 
     R = 400
   if (missing(graph)) 
-    graph = TRUE
+    graph = FALSE
   
   
   Parms = NULL
