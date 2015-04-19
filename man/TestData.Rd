@@ -41,11 +41,6 @@ theta[7]: \tab beta point \tab 13 \tab (log luminance)\cr
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 The parameters values chosen as defaults are entirely arbitrary. The sixth parameter is the negative sum of the rates of rod recovery called \emph{S2} and \emph{S3}
-
-{
-      \if{html}{\figure{ParamExplain.jpg}{options: width="50\%" alt="Figure: Parameters explained"}}
-      \if{latex}{\figure{ParamExplain.pdf}{options: width=7cm}}
-    }
 }
 
 \value{The function returns a \emph{dark} object with the following components;
