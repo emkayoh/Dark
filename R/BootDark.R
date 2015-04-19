@@ -46,15 +46,6 @@ BootDark <- function(obj, R, graph) {
     resid <- (y - fit)
     val <- O$val
   }
-  if (graph) {
-    XL <- expression(bold(Time ~ (min)))
-    YL <- expression(bold(Threshold ~ (LU)))
-    plot(x, y, ylim = c(-4, 0), xlim = c(0, 20), xlab = XL, ylab = YL)
-    lines(x, Fn(p, x), col = 2)
-    
-  }
-  
-  
   
   BS <- matrix(0, R, 7) #NULL
   for (ii in 1:R) {
@@ -63,11 +54,6 @@ BootDark <- function(obj, R, graph) {
   }
   
   BSq <- round(apply(BS, 2, qJK), 3)
-  if (graph) {
-    lines(x, Fn(BSq[1, ], x), col = 3)
-    lines(x, Fn(BSq[3, ], x), col = 3)
-  }
-  
   
   Boot <- t(BSq)
   row.names(Boot) <- c("CT", "CC", "Tau", "S2", "Alpha", "S3", "Beta")
