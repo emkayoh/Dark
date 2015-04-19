@@ -2,6 +2,7 @@ BestFit<- function(obj, MSC, draw){
   .GlobalEnv$x<-obj$time
   .GlobalEnv$y<-obj$thrs
 if(missing(draw)) draw=F
+
   mFn<-c(1,1,P3,1,P5c,1,P7c)
   idx<-c(3,5,7)
   obj$call=NULL
@@ -16,8 +17,13 @@ if(missing(draw)) draw=F
   while (Opt$con) Opt<-optim(Opt$par, Fn)
   opt<-Opt$par
   
-  if(draw){X<- seq(0, max(obj$time), length.out = 1000)
-           lines(X, Fn(opt,X), col=2)
+  if(draw){
+    X<- seq(0, max(obj$time), length.out = 1000)
+    
+    if(length(dev.list())==0){
+      plot(obj$time,obj$thrs)
+    }
+    lines(X, Fn(opt,X), col=2)
   }
   
   Res<-c(call=match.call(),obj, list(opt=opt, Mod=Fn(Mod)$Mod, Pn=Fn(Mod)$Pn, AIC=MSC$AIC, val=Opt$val))
