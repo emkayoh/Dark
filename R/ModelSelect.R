@@ -1,6 +1,7 @@
 ModelSelect<- function(obj, P){
-  x<<- obj$time
-  y<<- obj$thrs
+
+  .GlobalEnv$x<-obj$time
+  .GlobalEnv$y<-obj$thrs
   
   param<- matrix(0, 3,7)
   idx<-c(3,5,7)
@@ -33,9 +34,8 @@ ModelSelect<- function(obj, P){
     
     jj=jj+1
    }
-
-  #   x<<- NULL
-  #   y<<- NULL
+  
+  on.exit(rm(list=c('x','y'),envir = .GlobalEnv))
   
   list(AIC=AIC, param=param)
 }

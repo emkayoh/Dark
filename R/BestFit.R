@@ -1,4 +1,6 @@
 BestFit<- function(obj, MSC, draw){
+  .GlobalEnv$x<-obj$time
+  .GlobalEnv$y<-obj$thrs
 if(missing(draw)) draw=F
   mFn<-c(1,1,P3,1,P5c,1,P7c)
   idx<-c(3,5,7)
@@ -24,7 +26,7 @@ if(missing(draw)) draw=F
   Res$fit <- Y 
   Res$resid <- obj$thrs-Y
   Res$R2 <- 1-(var(obj$thrs-Y)/var(obj$thrs))
-  
+on.exit(rm(list=c('x','y'),envir = .GlobalEnv))
   class(Res)='dark'
   Res
 }

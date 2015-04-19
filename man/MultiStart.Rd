@@ -7,14 +7,14 @@ MultiStart
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-Given an initial seed parameter array 'P', this function repeatedly (repeats) optimises the parameters in the vicinity of the seed array. The width of the search is dependent upon the value of 'spread'. 'P' can also be a 'dark' object. 
+Given a dark object 'obj', this function repeatedly (repeats) optimises the parameters in the vicinity of the seed array. The width of the search is dependent upon the value of 'spread'. 'P' can also be a 'dark' object. 
 }
 \usage{
-MultiStart(P, repeats, draw, spread, debug)
+MultiStart(obj, repeats, draw, spread, debug)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{P}{The seed array of parameter values, that are to be subject to the multi start algorithm. ALternatively a 'dark' object containing at least P$time, P$thrs and P$init an initial estimate of the parameters of dark adaptation. 
+  \item{obj}{A 'dark' object containing at least P$time, P$thrs and P$init an initial estimate of the parameters of dark adaptation. 
 %%     ~~Describe \code{P} here~~
 }
   \item{repeats}{The number of times the algorithm is repeated
