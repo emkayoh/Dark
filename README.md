@@ -1,6 +1,7 @@
 # Dark
 This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurments and experiments. 
 
+## Getting started
 
 The scripts rely on the generation of a dark object, `obj`. This is just a list with at least two elements; `obj$time` and `obj$thrs`. 
 
