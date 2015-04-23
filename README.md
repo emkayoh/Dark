@@ -1,5 +1,11 @@
 # Dark
-This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurments and experiments. 
+This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurements and experiments. The data is collected in the Optometry department of the University of Manchester in the Faculty of Life Sciences. The principal investigator is Dr Ian J Murray, other members of the team include Drs Jeremiah Kelly, Humza Tahir and Laura Patryas.
+
+Data are collected using custom built laboratory devices and computer controlled CRT units. The results are stored usually as text or spreadsheet files.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable. 
+
+The suite of scripts uses a list referred to as a *dark* object, an initial work through of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your own work. 
+
+The author of the package can be contacted through  *jeremiah.kelly at manchester.ac.uk*
 
 ## Getting started
 
