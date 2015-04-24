@@ -16,19 +16,16 @@ Declutter <- function(tmp, delta) {
 		
 		x <- tmp$time[idx]
 		y <- tmp$thrs[idx]
-		tmp$time = x
-		tmp$thrs = y
-		obj <- tmp
-		class(obj) = "dark"
-		return(obj)
+
 	} else {
 		idx <- c(0, diff(tmp[, 1])) > delta
 		x <- tmp[idx, 1]
 		y <- tmp[idx, 2]
+
+	}
 		tmp$time = x
 		tmp$thrs = y
 		obj <- tmp
 		class(obj) = "dark"
 		return(obj)
-	}
 }
