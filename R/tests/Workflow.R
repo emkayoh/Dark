@@ -7,6 +7,5 @@ P<-Start(tmp, 100)
 MSC<-ModelSelect(tmp,P)
 tmp<-BestFit(tmp,MSC, T)
 tmp<-MultiStart(tmp,repeats = 5)
+BootDark(tmp,R = 200,T)
 
-BStmp<-BootDark(tmp,R = 200,T)$BS
-# Rprof(NULL)
