@@ -77,7 +77,7 @@ a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
 tmp <- TestData(x, a)
 y <- tmp$resid
 %% ~~~~~~~~~~~~~~~~~~~~~
-# P3(TRUE)
+P3(TRUE)
 # Describes the model
 
 P3(a)
