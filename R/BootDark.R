@@ -58,7 +58,8 @@ BootDark <- function(obj, R, graph) {
 	BSq <- round(apply(BS, 2, qJK), 3)
 
 	Boot <- t(BSq)
-	row.names(Boot) <- c("CT", "CC", "Tau", "S2", "Alpha", "S3", "Beta")
+#   S3<- -(Boot[4,]+Boot[6,])
+	row.names(Boot) <- c("CT", "CC", "Tau", "S2", "Alpha", "*S3*", "Beta")
 
 	valid <- as.integer((Boot[, 1] * Boot[, 3]) > 0)
 	weight <- 1/abs(Boot[, 1] - Boot[, 3])
