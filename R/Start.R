@@ -7,7 +7,7 @@ Start <- function(obj, Reps) {
   xSp <- mean(range(x))
   ySp <- mean(range(y))
 
-  # set.seed(1234)
+  set.seed(1234)
   
   CT <- meshVec(ySp, max(y), Reps)
   CC <- meshVec(0, -ySp, Reps)
