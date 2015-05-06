@@ -48,13 +48,17 @@ BootDark <- function(obj, R, graph) {
 		resid <- (y - fit)
 		val <- O$val
 	}
+#   div<-
+pb <- txtProgressBar(min = 0, max = R, style = 3)
 
 	BS <- matrix(0, R, 7) #NULL
 	for (ii in 1:R) {
 		y <<- fit + sample(resid, replace = T)
 		BS[ii, 1:Pn] <- optim(p, Fn)$par
+#     if(ii%%mod==0) cat(paste0(ii,' of ',R,'\n'))
+setTxtProgressBar(pb, ii)
 	}
-
+close(pb)
 	BSq <- round(apply(BS, 2, qJK), 3)
 
 	Boot <- t(BSq)
