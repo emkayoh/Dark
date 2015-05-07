@@ -22,9 +22,7 @@ If set to \code{T} the drawing of the figure procedes in one second steps.
 %%  ~~ If necessary, more details than the description above ~~
 The data are extracted from Pugh's 1975 paper:
 
-E. Pugh. Rushton’s paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
- 
-
+E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
 }
 \value{
 %%  ~Describe the value returned
@@ -32,13 +30,13 @@ E. Pugh. Rushton’s paradox: rod dark adaptation after flash photolysis. The Jo
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
-A figure is returned. It can be wrapped in a \code(pdf()) or similiar output device. 
+A figure is returned. It can be wrapped in a \code{pdf()} or similiar output device. 
 }
 \references{
 %% ~put references to the literature/web site here ~
 O. Mahroo and T. Lamb. Recovery of the human photopic electroretinogram after bleaching exposures: estimation of pigment regeneration kinetics. The Journal of Physiology, 554(2):417, 2004.
 
-T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in retinal and eye research, 23(3):307–380, 2004.
+T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in retinal and eye research, 23(3):307-380, 2004.
 
 G. McGwin Jr, G. Jackson, and C. Owsley. Using nonlinear regression to estimate parameters of dark adaptation. Behavior research methods, instruments, & computers, 31(4):712, 1999.}
 \author{
