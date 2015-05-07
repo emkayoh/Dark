@@ -4,14 +4,10 @@ parameter_exp <- function(animate = F) {
   # MLP model of sensitivity recovery. Taken from Pugh 1975 
   #   E. Pugh. Rushton’s paradox: rod dark adaptation after flash photolysis. 
   #   The Journal of Physiology, 248(2):413, 1975.
-  
-  
-  .GlobalEnv$tmp <- NULL
-  
   Ani <- function(tt = 1, animate) if (animate) 
     Sys.sleep(tt)
-  load("data/Pugh_1975_Dark.Rdata")
-  
+  data('dark',envir = environment(parent.frame))
+  tmp<-dark
   par(las = 1, bty = "n", mfrow = c(1, 1), font = 2, font.lab = 2, cex.lab = 1.5, oma = c(1, 
                                                                                           1, 1, 1), mar = c(6, 6, 2, 3))
   XL <- expression(bold(Time ~ (min)))
@@ -85,6 +81,6 @@ parameter_exp <- function(animate = F) {
   arrows(Al, P7c(tmp$opt, Be) - 0.4, Be, P7c(tmp$opt, Be), length = 0.125, angle = 20, lty = Lty)
   text(Al - 5, P7c(tmp$opt, Be) - 0.6, Sym, adj = c(0.5, 0), cex = 1.2)
   
-  on.exit(rm(list = c("tmp"), envir = .GlobalEnv))
+  on.exit(rm(list = c("dark"), envir = .GlobalEnv))
   
 }
