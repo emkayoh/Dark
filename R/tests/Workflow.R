@@ -1,8 +1,8 @@
 # test
 
 rm(list=ls())
-load('data/Pugh_1975_Dark.Rdata')
-
+data(dark)
+tmp<-dark
 par(las=1, bty='n',mfrow=c(1,1))
 plot(tmp$time, tmp$thrs)
 
