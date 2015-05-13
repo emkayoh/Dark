@@ -81,6 +81,6 @@ parameter_exp <- function(animate = F) {
   arrows(Al, P7c(tmp$opt, Be) - 0.4, Be, P7c(tmp$opt, Be), length = 0.125, angle = 20, lty = Lty)
   text(Al - 5, P7c(tmp$opt, Be) - 0.6, Sym, adj = c(0.5, 0), cex = 1.2)
   
-  on.exit(rm(list = c("dark"), envir = .GlobalEnv))
+#   on.exit(rm(list = c("dark"), envir = .GlobalEnv))
   
 }
