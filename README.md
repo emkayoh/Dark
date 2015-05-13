@@ -6,7 +6,7 @@ Data are collected using custom built laboratory devices and computer controlled
 The suite of scripts uses a list referred to as a *dark* object, an initial work through of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your own work. 
 
 ### Acknowledgement
-This work presents independent research funded by the National Institute for Health Research Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001. The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
+This work presents independent research funded by the [National Institute for Health Research](http://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001. The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
 
 
 ### Contact
