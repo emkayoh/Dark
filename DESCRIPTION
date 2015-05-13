@@ -5,7 +5,7 @@ Version: 0.9.3
 Date: 2015-05-01
 Author: Dr Jeremiah MF Kelly 
 Maintainer: Dr Jeremiah MF Kelly <emkayoh@mac.com>
-Description: The recovery of visual sensitivity in a dark environment is known as Dark 
+Description: The recovery of visual sensitivity in a dark environment is known as dark 
  adaptation.  In a clinical or research setting the recovery is typically 
  measured after a dazzling flash of light and can be described by the Mahroo, 
  Lamb and Pugh (MLP) model of dark adaptation. The functions in this package 
