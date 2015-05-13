@@ -91,7 +91,7 @@ BootDark <- function(obj, R, graph, progress = F) {
   if (graph) {
     XL <- expression(bold(Time ~ (min)))
     YL <- expression(bold(Threshold ~ (LU)))
-    plot(x, y, ylim = c(-4, 0), xlim = c(0, 20), xlab = XL, ylab = YL)
+    plot(x, y, xlab = XL, ylab = YL)
     lines(x, Fn(p, x), col = 2)
     
     lines(x, Fn(BSq[1, ], x), col = 3)
