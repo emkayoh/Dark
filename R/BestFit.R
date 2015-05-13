@@ -26,10 +26,16 @@ BestFit <- function(obj, MSC, draw) {
     }
     lines(X, Fn(opt, X), col = 2)
   }
-  obj$val <- NULL
-  Res <- c(obj, list(opt = opt))
+
   Y <- Fn(opt, obj$time)
-  (Res$cal <- call) = match.call()
+  
+  obj$val <- NULL  
+  obj$opt <- NULL
+  Res <- obj
+
+  
+  Res$opt = opt
+  Res$call = match.call()
   Res$AIC = MSC$AIC
   Res$Pn = Fn(Mod)$Pn
   Res$fit <- Y
@@ -37,6 +43,7 @@ BestFit <- function(obj, MSC, draw) {
   Res$Mod = Fn(Mod)$Mod
   Res$val = Opt$val
   Res$R2 <- 1 - (var(obj$thrs - Y)/var(obj$thrs))
+  
   on.exit(rm(list = c("x", "y"), envir = .GlobalEnv))
   class(Res) <- "dark"
   Res
