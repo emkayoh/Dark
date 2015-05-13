@@ -44,10 +44,7 @@ P<-Start(tmp,10)
 MSC<-ModelSelect(tmp, P)
 tmp2<-BestFit(tmp, MSC)
 tmp3<-MultiStart(tmp2,100)
-BootDark(tmp3,100)
+BootDark(tmp3,150)
 
 
 }
-
-
-%% https://github.com/emkayoh/Dark
