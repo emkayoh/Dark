@@ -79,7 +79,6 @@ MSC<-ModelSelect(tmp, P)
 tmp2<-BestFit(tmp, MSC)
 tmp3<-MultiStart(tmp2,100)
 BootDark(tmp3,100)
-
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

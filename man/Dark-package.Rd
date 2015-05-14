@@ -38,13 +38,11 @@ T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress 
 %% ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %% }
 \examples{
-Time<- seq(0,20, by=0.33)
+Time<- seq(0,20)
 tmp<- TestData(Time)
 P<-Start(tmp,10)
 MSC<-ModelSelect(tmp, P)
 tmp2<-BestFit(tmp, MSC)
 tmp3<-MultiStart(tmp2,100)
 BootDark(tmp3,150)
-
-
 }
