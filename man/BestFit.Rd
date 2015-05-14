@@ -74,7 +74,6 @@ tmp <- TestData(0:20)
 P<-Start(tmp,100)
 MSC<-ModelSelect(tmp, P)
 BestFit(tmp, MSC)
-
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
