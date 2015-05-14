@@ -61,6 +61,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 \code{\link{TestData}}
 }
 \examples{
+set.seed(1234)
 tmp <- GetData()
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

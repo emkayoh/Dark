@@ -81,6 +81,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
 \examples{
+set.seed(1234)
 tmp<-TestData(0:20)
 P<- Start(tmp)
 MSC<-ModelSelect(tmp, P)

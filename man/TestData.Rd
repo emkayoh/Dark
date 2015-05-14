@@ -9,6 +9,7 @@ This script creates data in the form of a \emph{dark} object from specified time
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
+set.seed(1234)
 TestData(x, theta, sse, repeatable)
 }
 %- maybe also 'usage' for other objects documented here.

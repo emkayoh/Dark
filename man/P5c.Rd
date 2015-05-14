@@ -71,6 +71,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 \code{\link{P3}},\code{\link{P7c}}}
 \examples{
+set.seed(1234)
 x <- 0:20
 a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
 tmp <- TestData(x, a)
