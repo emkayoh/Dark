@@ -59,8 +59,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 
 }
 \examples{
-tmp <- TestData(0:20)
-AICc(tmp)
+AICc(dark)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
