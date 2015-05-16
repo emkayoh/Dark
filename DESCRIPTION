@@ -21,3 +21,5 @@ License:  GPL-3
 LazyData: yes
 URL: https://github.com/emkayoh/Dark, http://www.nihr.ac.uk
 BugReports: https://github.com/emkayoh/Dark/issues
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
