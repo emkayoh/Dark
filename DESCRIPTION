@@ -1,8 +1,8 @@
 Package: Dark
 Type: Package
 Title: The Analysis of Dark Adaptation Data
-Version: 0.9.3
-Date: 2015-05-01
+Version: 0.9.4
+Date: 2015-05-21
 Author: Dr Jeremiah MF Kelly 
 Maintainer: Dr Jeremiah MF Kelly <emkayoh@mac.com>
 Description: The recovery of visual sensitivity in a dark environment is known as dark 
@@ -19,5 +19,5 @@ Description: The recovery of visual sensitivity in a dark environment is known a
  updated as it is processed.
 License:  GPL-3
 LazyData: yes
-URL: https://github.com/emkayoh/Dark, www.nihr.ac.uk
+URL: https://github.com/emkayoh/Dark, http://www.nihr.ac.uk
 BugReports: https://github.com/emkayoh/Dark/issues
