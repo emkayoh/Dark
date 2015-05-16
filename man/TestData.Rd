@@ -9,7 +9,6 @@ This script creates data in the form of a \emph{dark} object from specified time
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-set.seed(1234)
 TestData(x, theta, sse, repeatable)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -77,8 +76,9 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 %}
 \examples{
-x<- seq(0,20, by=0.33)
-tmp<-TestData(x)
+set.seed(1234)
+x <- seq(0,20)
+tmp <- TestData(x)
 tmp
 
 }
