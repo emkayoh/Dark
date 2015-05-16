@@ -11,7 +11,7 @@ This data was extracted from Figure 1 in Rushton's paradox: rod dark adaptation 
 }
 \usage{data("dark")}
 \format{
-  \code{dark} is a list of 14 items, that are used or ccreated by the functions in this package.
+  \code{dark} is a list of 14 items, that are used or created by the functions in this package.
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~
@@ -41,6 +41,7 @@ The items are:
 E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
 
 \url{http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1975.sp010982/abstract}
+
 \url{http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1975.sp010982/pdf}
 }
 \examples{
