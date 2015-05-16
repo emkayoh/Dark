@@ -60,9 +60,9 @@ Time  <-c(0, 0.02, 1, 2,  3, 3.02,  5, 6, 6.02, 7, 9, 9.02, 11,
 # with duplicated times
 set.seed(1234)
 tmp <- TestData(Time, sse=0.05) 
-plot(tmp$time, tmp$thrs, ylim=c(-4,0))
+\dontrun{plot(tmp$time, tmp$thrs, ylim=c(-4,0))}
 tmp <- Declutter(tmp)
-points(tmp$time, tmp$thrs, col='red', pch=16)
+\dontrun{points(tmp$time, tmp$thrs, col='red', pch=16)}
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

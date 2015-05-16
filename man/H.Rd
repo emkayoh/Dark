@@ -60,7 +60,7 @@ x <- seq(0, 20, by=0.1)
 k <- 10
 t <- 10
 op <- par(las=1, bty='n')
-plot(x,H(x,k,t), 'l')
+\dontrun{plot(x,H(x,k,t), 'l')}
 par(op)
 }
 
