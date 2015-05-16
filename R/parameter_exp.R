@@ -2,11 +2,12 @@ parameter_exp <- function(animate = F) {
   # this function draws a classic dark adaptation
   # curve to explain the various parameters in the 
   # MLP model of sensitivity recovery. Taken from Pugh 1975 
-  #   E. Pugh. Rushton’s paradox: rod dark adaptation after flash photolysis. 
+  #   E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. 
   #   The Journal of Physiology, 248(2):413, 1975.
-  Ani <- function(tt = 1, animate) if (animate) 
+  Ani <- function(tt = 1, animate) if (animate) {
     Sys.sleep(tt)
-  data('dark',envir = environment(parent.frame))
+  }
+#   get('dark',envir=.GlobalEnv)
   tmp<-dark
   par(las = 1, bty = "n", mfrow = c(1, 1), font = 2, font.lab = 2, cex.lab = 1.5, oma = c(1, 
                                                                                           1, 1, 1), mar = c(6, 6, 2, 3))
