@@ -8,8 +8,8 @@
 \tabular{ll}{
 Package: \tab Dark\cr
 Type: \tab Package\cr
-Version: \tab 0.9.3\cr
-Date: \tab 2015-04-17\cr
+Version: \tab 0.9.4\cr
+Date: \tab 2015-05-21\cr
 License: \tab GPL-2\cr
 } 
 Dark adaptation is the recovery of visual sensitivity in a dark environment and can be described by a physiological model. This package contains a series of functions to analyse data collected during dark adaptation.  
@@ -38,11 +38,13 @@ T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress 
 %% ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 %% }
 \examples{
+
+set.seed(1234)
 Time<- seq(0,20)
 tmp<- TestData(Time)
-P<-Start(tmp,10)
-MSC<-ModelSelect(tmp, P)
-tmp2<-BestFit(tmp, MSC)
-tmp3<-MultiStart(tmp2,100)
-BootDark(tmp3,150)
+\dontrun{P<-Start(tmp,1000)}
+\dontrun{MSC<-ModelSelect(tmp, P)}
+\dontrun{tmp2<-BestFit(tmp, MSC)}
+\dontrun{tmp3<-MultiStart(tmp2,100)}
+\dontrun{BootDark(tmp3,150)} 
 }
