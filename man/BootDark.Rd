@@ -7,7 +7,7 @@ BootDark
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-A script to use bootstrap techniques to calculate confidence intervals for parameter estimates from a 'dark' object.}
+A script using bootstrap techniques to calculate confidence intervals for parameter estimates from a 'dark' object.}
 \usage{
 BootDark(obj, R, graph, progress = F)
 }
