@@ -13,7 +13,7 @@ Vignettes are long form documentation commonly included in packages. Because the
 
 ```{r}
 # test
-library(Dark)
+library(dark)
 data(dark)
 tmp<-dark
 names(tmp)

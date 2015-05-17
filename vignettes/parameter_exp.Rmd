@@ -12,7 +12,7 @@ vignette: >
 The following plots expalin the parameters of the model used to predict thresholds following a photo-bleach in excess of 30% of the retinal photopigment. 
 
 ```{r, fig.align='center', fig.width=8, fig.height=8, echo=FALSE}
-library(Dark)
+library(dark)
 data(dark)
 tmp<-dark
   par(las = 1, bty = "n", 
