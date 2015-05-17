@@ -1,6 +1,6 @@
 # Dark
 
-## Build Status
+##### Build Status
 [![Build Status](https://travis-ci.org/emkayoh/Dark.svg?branch=master)](https://travis-ci.org/emkayoh/Dark)
 
 
