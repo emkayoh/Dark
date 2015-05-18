@@ -1,5 +1,5 @@
 # Dark
-Version 0.9.4
+Version 0.9.5
 
 ##### Build Status 
 [![Build Status](https://travis-ci.org/emkayoh/Dark.svg?branch=master)](https://travis-ci.org/emkayoh/Dark)
