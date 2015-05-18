@@ -9,7 +9,9 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-Vignettes are long form documentation commonly included in packages. Because they are 
+The following describes the work flow for the analysis of dark adaptation data. The data were extracted from Figure 1 in Rushton's paradox: rod dark adaptation after flash photolysis, E.N.Pugh Jr. \emph{The Journal of Physiology,} 1975. 
+
+A 'dark' object can have up to 14 elements 
 
 ```{r}
 # test
@@ -19,22 +21,22 @@ tmp<-dark
 names(tmp)
 ```
 
+The function `Start` generates an array of possible parameter values calculated from the data, which are then passed to `ModelSelect`. The purpose of `ModelSelect` is to return parameter estimates and AIC scores. 
 
-
-Some text about the data
 
 ```{r, fig.width=6, fig.height=6, fig.align='center'}
+set.seed(1234)
 par(las=1, bty='n',mfrow=c(1,1))
 plot(tmp$time, tmp$thrs)
 
 P<-Start(tmp, 2000)
 MSC<-ModelSelect(tmp,P)
+MSC
 tmp<-BestFit(tmp,MSC, T)
 ```
 
+A further function `MultiStart` ensures that the estimated parameter values are optimal by repeatedly optimising the model with starting locations in the vicinity of the initial estimate. Finally `BootDark` uses bootstrap methods to calculate confidence intervals for the parameter estimates.
 
-
-Some text
 
 ```{r, fig.width=6, fig.height=6, fig.align='center'}
 par(las=1, bty='n')
@@ -44,7 +46,7 @@ tmp<-BootDark(tmp,R = 150, T)
 ```
 
 
-the output 
+The final `dark` object with 14 elements:
 
 ```{r}
 tmp
