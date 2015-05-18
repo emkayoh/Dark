@@ -10,8 +10,8 @@ vignette: >
 ---
 
 The following plots explain the parameters of the model used to predict thresholds following a photo-bleach in excess of 30% of the retinal photopigment. 
-This data was extracted from Figure 1 in Rushton's paradox: rod dark adaptation after flash photolysis, E.N.Pugh Jr. *The Journal of Physiology,} 1975. 
-*
+This data was extracted from Figure 1 in Pugh 1975. 
+
 
 There are typically three phases to the recovery of visual sensitivity in dark adaptation data; an early cone phase, the second rod phase sometimes called S2, and a final rod phase or S3 and are shown in the figure below. 
 
@@ -78,9 +78,13 @@ Sym <- expression(theta[3] ~ Cone ~ Time ~ Constant ~ (tau))
 text(3, CT + CC/2, Sym, adj = c(0, 0), cex = 1.2)
 ```
 
-After the cone mediated phase there follows the rod phase, S2, which is defined by its slope, ($\theta_4$, log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) and the rod cone transition time or alpha point ($\theta_5$, min). 
+After the cone mediated phase there follows the rod phase, S2, which is defined by its slope, 
 
-The linear (on a log-lin plot) rod phase S2, described in detail in [ref, Pugh and Lamb 2004], represents the rate limited restoration of photopigment.
+($\theta_4$,~log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) 
+
+and the rod cone transition time or alpha point ($\theta_5$, min). 
+
+The linear (on a log-lin plot) rod phase S2, described in detail in Lamb and Pugh 2004, represents the rate limited restoration of photopigment.
 
 
 ```{r, fig.align='center', fig.width=8, fig.height=8, echo=FALSE}
@@ -211,3 +215,7 @@ $$
 Notice that since the threshold data are in log units, when plotted against time the apparently linear phases S2 and S3 describe exponential processes.
 
 
+# References
+E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
+
+T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in retinal and eye research, 23(3):307–380, 2004.
