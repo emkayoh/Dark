@@ -53,7 +53,9 @@ H is a logistic function that maps inputs to a values between zero and one
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-\code{\link{P5c}}}, \code{\link{P7c}}
+\code{\link{P5c}}, \code{\link{P7c}}
+}
+
 \examples{
 
 x <- seq(0, 20, by=0.1)
