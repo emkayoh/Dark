@@ -18,11 +18,12 @@ Analytic<- function(obj){
   ################     Seven Param port algorithm search
   
   Param<- list(a1=params[1],a2=params[2],a3=params[3],a4=params[4],a5=params[5],a6=params[6],a7=params[7])    
-# suppressWarnings(
   mod1<-nls(formula=Thres,data=DATAlist, start=Param, trace=T, control=list(warnOnly=TRUE, tol=1e-06, minFactor=1/2048))
-# )
-  
-  obj$Analytic=signif(summary(mod1)$param,3)
+
+Parms<-signif(summary(mod1)$param,3)
+row.names(Parms) <- c("CT", "CC", "Tau", "S2", "Alpha", "S3", "Beta")
+
+  obj$Analytic=Parms
 obj$call<- match.call()
   class(obj)='dark'
 obj
