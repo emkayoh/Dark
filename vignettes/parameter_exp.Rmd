@@ -78,7 +78,7 @@ Sym <- expression(theta[3] ~ Cone ~ Time ~ Constant ~ (tau))
 text(3, CT + CC/2, Sym, adj = c(0, 0), cex = 1.2)
 ```
 
-After the cone mediated phase there follows the rod phase, S2 which represents the rate limited restoration of photopigment and is defined by its slope, ($\theta_4$, log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) and the rod-cone transition time or alpha point ($\theta_5$, min). It is clear from the figure that the alpha point is defined by the slope and the intercept of the S2 phase.
+After the cone mediated phase there follows the rod phase, S2, which represents the rate limited restoration of photopigment and is defined by its slope, ($\theta_4$, log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) and the rod-cone transition time or alpha point ($\theta_5$, min). It is clear from the figure that the alpha point is defined by the slope and the intercept of the S2 phase.
 
 The linear (on a log-lin plot) rod phase S2 is described in detail in Lamb and Pugh 2004.
 
