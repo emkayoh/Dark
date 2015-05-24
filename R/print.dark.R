@@ -1,5 +1,4 @@
 print.dark <- function(x, ...) {
-  if (class(dark) == "dark") {
     if (!is.null(x$time)) {
       cat("Times:\n")
       print(round(x$time, 3))
@@ -93,6 +92,5 @@ print.dark <- function(x, ...) {
       cat("Analytic estimates of parameters:\n** Interpret cautiously **\n")
       printCoefmat(round(x$Analytic, 3), P.value = TRUE, has.Pvalue = TRUE)
     }
-  }
   
 }
