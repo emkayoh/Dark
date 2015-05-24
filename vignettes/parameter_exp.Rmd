@@ -9,13 +9,13 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
-The following plots explain the parameters of the model used to predict thresholds following a photo-bleach in excess of 30% of the retinal photopigment. 
-This data was extracted from Figure 1 in Pugh 1975. 
+The following plots explain the parameters of the model used to predict thresholds ($Thrs$) following a photo-bleach which transforms more than 30% of the retinal photopigment. 
+These data were extracted from Figure 1 in Pugh 1975. 
 
 
 There are typically three phases to the recovery of visual sensitivity in dark adaptation data; an early cone phase, the second rod phase sometimes called S2, and a final rod phase or S3 and are shown in the figure below. 
 
-The initial phase depicts the cone response, and can be represented by three parameters; the absolute cone threshold ($\theta_1$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), the cone coefficient  ($\theta_2$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), and the time constant of cone recovery, sometimes known as tau ($\theta_3$, min).
+The initial phase depicts the cone response ($Thrs_c$), and can be represented by three parameters; the absolute cone threshold ($\theta_1$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), the cone coefficient  ($\theta_2$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), and the time constant of cone recovery, sometimes known as tau ($\theta_3$, min).
 
 $$
 Thrs_c = \theta_1 + \theta_2.\exp\left(\frac{\text{-}t}{\theta_3}\right) .
@@ -78,13 +78,9 @@ Sym <- expression(theta[3] ~ Cone ~ Time ~ Constant ~ (tau))
 text(3, CT + CC/2, Sym, adj = c(0, 0), cex = 1.2)
 ```
 
-After the cone mediated phase there follows the rod phase, S2, which is defined by its slope, 
+After the cone mediated phase there follows the rod phase, S2 which represents the rate limited restoration of photopigment and is defined by its slope, ($\theta_4$, log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) and the rod-cone transition time or alpha point ($\theta_5$, min). It is clear from the figure that the alpha point is defined by the slope and the intercept of the S2 phase.
 
-($\theta_4$,~log$_{10}$(cd.m$^{\text{-}2}$).min$^{\text{-}1}$) 
-
-and the rod cone transition time or alpha point ($\theta_5$, min). 
-
-The linear (on a log-lin plot) rod phase S2, described in detail in Lamb and Pugh 2004, represents the rate limited restoration of photopigment.
+The linear (on a log-lin plot) rod phase S2 is described in detail in Lamb and Pugh 2004.
 
 
 ```{r, fig.align='center', fig.width=8, fig.height=8, echo=FALSE}
@@ -194,23 +190,29 @@ text(Al - 5, P7c(tmp$opt, Be) - 0.6, Sym, adj = c(0.5, 0), cex = 1.2)
 
 ```
 
-The model uses the transition times to control step functions and hence allow each phase to combine.
+The model uses the transition times to control switch functions and hence allow each phase to combine.
 
-The response threshold *Thrs* can therefore be summarized as follows:
+The response threshold $Thrs$ can therefore be summarized as follows:
 $$
 Thrs = Thrs_c +
 \underbrace{ \theta_4.h(t,\theta_5) }_{\mbox{S2}}+\underbrace{ \theta_6.h(t,\theta_7) }_{\mbox{S3}}
 $$
-where $h(t,\theta_i)$ is a step function
+where $h(t,\theta_i)$ is a switch function:
 $$
 h(t,\theta_i)
 \begin{cases} 0 & \text{if $t-\theta_i\leq0$,}
 \\
 t-\theta_i &\text{if $t- \theta_i> 0$.}
 \end{cases}
-\qquad i \in (5,7)
+\qquad i \in (5,7).
 $$
 
+The models in this package use a logistic function 
+$$
+h(t,\theta_i)\rightarrow \frac{1}{1+exp(-k(t-\theta_i))}.(t-\theta_i)\qquad i \in (5,7).
+$$
+
+This continuous switch function is computationally more efficient and allows an analytic approach to estimates of parameter variance. 
 
 Notice that since the threshold data are in log units, when plotted against time the apparently linear phases S2 and S3 describe exponential processes.
 
@@ -218,4 +220,4 @@ Notice that since the threshold data are in log units, when plotted against time
 # References
 E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
 
-T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in retinal and eye research, 23(3):307–380, 2004.
+T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress in Retinal and Eye Research, 23(3):307–380, 2004.
