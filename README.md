@@ -73,7 +73,7 @@ attr(,"class")
 ```
 email or raise an issue for further help. 
 
-#### Status
+<!--  #### Status
 
 The package is under active development with releases to
 [CRAN](http://cran.r-project.org) about once a month.
@@ -83,3 +83,4 @@ Jeremiah MF Kelly
 The University of Manchester
 
 #### License
+regular html comment --> 
