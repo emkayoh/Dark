@@ -6,7 +6,7 @@ Version 0.9.5
 
 [![License](http://img.shields.io/badge/license-GPL%20%283%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0-standalone.html) 
 
-[![Downloads](http://cranlogs.r-pkg.org/badges/Dark?color=brightgreen)](http://cran.rstudio.com/package=Dark)
+//[![Downloads](http://cranlogs.r-pkg.org/badges/Dark?color=brightgreen)](http://cran.rstudio.com/package=Dark)
 
 This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurements and experiments. The data are collected in the Optometry department of the University of Manchester in the Faculty of Life Sciences. The principal investigator is Dr Ian J Murray, other members of the team include Drs Jeremiah Kelly, Humza Tahir and Laura Patryas.
 
