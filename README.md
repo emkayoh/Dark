@@ -1,7 +1,7 @@
 # Dark
 Version 0.9.5
 
-##### Build Status 
+#### Build Status 
 [![Build Status](https://travis-ci.org/emkayoh/Dark.svg?branch=master)](https://travis-ci.org/emkayoh/Dark)
 
 
@@ -69,3 +69,14 @@ attr(,"class")
 [1] "dark"
 ```
 email or raise an issue for further help. 
+
+#### Status
+
+The package is under active development with releases to
+[CRAN](http://cran.r-project.org) about once a month.
+
+#### Author
+Jeremiah MF Kelly
+The University of Manchester
+
+#### License
