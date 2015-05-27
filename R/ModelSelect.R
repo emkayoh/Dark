@@ -8,7 +8,7 @@ ModelSelect <- function(obj, P) {
 	AIC <- numeric(7)
 	mFn <- c(1, 1, P3, 1, P5c, 1, P7c)
 	jj = 1
-
+	
 	for (ii in idx) {
 		Fn = mFn[[ii]]
 
