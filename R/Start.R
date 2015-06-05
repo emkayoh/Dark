@@ -10,11 +10,11 @@ Start <- function(obj, Reps) {
   set.seed(1234)
   
   CT <- meshVec(ySp, max(y), Reps)
-  CC <- meshVec(0, -ySp, Reps)
-  Tau <- sample(CC, replace = F)
+  CC <- meshVec(0.01, -ySp, Reps)
+  Tau <- 1/sample(CC, replace = F)
   S2 <- meshVec(-0.6, 0, Reps)
-  Alph <- meshVec(0, xSp, Reps)
-  S3 <- -sample(S2, replace = F)
+  Alph <- meshVec(0.01, xSp, Reps)
+  S3 <- -sample(S2, replace = F)/2
   Beta <- meshVec(xSp, max(x), Reps)
 
 
