@@ -14,7 +14,7 @@ Start <- function(obj, Reps) {
   Tau <- 1/sample(CC, replace = F)
   S2 <- meshVec(-0.6, 0, Reps)
   Alph <- meshVec(0.01, xSp, Reps)
-  S3 <- -sample(S2, replace = F)/2
+  S3 <- -sample(S2, replace = F)
   Beta <- meshVec(xSp, max(x), Reps)
 
 
