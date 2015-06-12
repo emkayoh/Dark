@@ -1,5 +1,5 @@
 # Dark
-Version 0.9.5
+Version 0.9.6
 
 #### To Do
 Test scripts 
