@@ -39,7 +39,7 @@ Returns an object with the same elements as 'tmp' but with object$time and objec
 %}
 \author{
 %%  ~~who you are~~
-Dr Jeremiah MF Kelly
+Jeremiah MF Kelly
 
 Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }

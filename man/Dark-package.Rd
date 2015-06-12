@@ -21,7 +21,7 @@ The functions generate rapid initial objective estimates of data adaptation para
 The functions rely upon a *dark* list or object. This object is created by the first function and parts are added to the object as it is processed.
 }
 \author{
-Dr Jeremiah MF Kelly
+Jeremiah MF Kelly
 
 Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 

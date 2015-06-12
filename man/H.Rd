@@ -41,7 +41,7 @@ The logistic function: \url{http://en.wikipedia.org/wiki/Logistic_function}
 The step function: \url{http://en.wikipedia.org/wiki/Heaviside_step_function}
 }
 \author{
-Dr Jeremiah MF Kelly
+Jeremiah MF Kelly
 
 Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }

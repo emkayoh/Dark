@@ -49,7 +49,7 @@ These ranges of possible values are complied into an array by sampling without r
 %}
 \author{
 %%  ~~who you are~~
-Dr Jeremiah MF Kelly
+Jeremiah MF Kelly
 
 Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 }
