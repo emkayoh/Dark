@@ -1,6 +1,10 @@
 # Dark
 Version 0.9.5
 
+#### To Do
+Test scripts 
+
+
 #### Build Status 
 [![Build Status](https://travis-ci.org/emkayoh/Dark.svg?branch=master)](https://travis-ci.org/emkayoh/Dark)
 
@@ -8,6 +12,8 @@ Version 0.9.5
 
 <!-- [![Downloads](http://cranlogs.r-pkg.org/badges/Dark?color=brightgreen)](http://cran.rstudio.com/package=Dark)regular html comment --> 
 
+
+### Introduction
 This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurements and experiments. The data are collected in the Optometry department of the University of Manchester in the Faculty of Life Sciences. The principal investigator is Dr Ian J Murray, other members of the team include Drs Jeremiah Kelly, Humza Tahir and Laura Patryas.
 
 Data are collected using custom built laboratory devices and computer controlled CRT units. The results are stored usually as text or spreadsheet files.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable. 
