@@ -14,7 +14,7 @@ TestData <- function(x, theta, sse, repeatable) {
 
 	Len <- length(x)
 	Noise <- rnorm(Len, 0, sqrt(sse))
-	Y <- theta[1] + theta[2] * exp(-x * theta[3]) + theta[4] * (x - theta[5]) * H(x, 10, theta[5]) + theta[6] * (x - 
+	Y <- theta[1] + theta[2] * exp(-x / theta[3]) + theta[4] * (x - theta[5]) * H(x, 10, theta[5]) + theta[6] * (x - 
 		theta[7]) * H(x, 10, theta[7])
 
 	tmp <- list(call = match.call(), time = x, thrs = (Y + Noise), resid = Noise, fit = Y, thet = theta, sse = sse, 
