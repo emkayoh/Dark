@@ -7,7 +7,6 @@ Five parameter model.
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 The five parameter model. An exponential decay followed by a linear phase. 
-
 }
 \usage{
 P5c(a,X)
@@ -16,14 +15,14 @@ P5c(a,X)
 \arguments{
   \item{a}{
 %%     ~~Describe \code{x} here~~
-An array of parameters;
+ An array of parameters;
   %% insert table here
   \tabular{lcc}{
 a: \tab parameter  \tab Units\cr\cr
 a[1]: \tab cone threshold \tab (log lum)\cr
 a[2]: \tab cone coefficient \tab (log lum)\cr
 a[3]: \tab cone time constant  \tab (minutes)\cr
-a[4]: \tab S2  \tab (log lum/ minute)\cr
+a[4]: \tab S2  \tab (log lum / minute)\cr
 a[5]: \tab alpha point  \tab (minutes)\cr
 }
 }
