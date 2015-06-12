@@ -1,8 +1,8 @@
 Package: Dark
 Type: Package
 Title: The Analysis of Dark Adaptation Data
-Version: 0.9.5
-Date: 2015-05-17
+Version: 0.9.6
+Date: 2015-06-12
 Author: Dr Jeremiah MF Kelly 
 Maintainer: Dr Jeremiah MF Kelly <emkayoh@mac.com>
 Description: The recovery of visual sensitivity in a dark environment is known as dark 
