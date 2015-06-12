@@ -6,7 +6,8 @@ Five parameter model.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-The five parameter model. An exponential decay followed by a linear phase.  
+The five parameter model. An exponential decay followed by a linear phase. 
+
 }
 \usage{
 P5c(a,X)
