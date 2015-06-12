@@ -56,7 +56,7 @@ BootDark <- function(obj, R, graph, progress = F) {
 		y <<- fit + sample(resid, replace = T)
 		BS[ii, 1:Pn] <- optim(p, Fn)$par
 		# coud be worthwhile investigating a 
-		# while loop here to ensure convergence
+		# while loop here to ensure convergence
 
 		if (progress) 
 			setTxtProgressBar(pb, ii)
