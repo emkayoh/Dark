@@ -11,7 +11,7 @@ vignette: >
 
 The following describes the work flow for the analysis of dark adaptation data. The data were extracted from Figure 1 in Rushton's paradox: rod dark adaptation after flash photolysis, E.N.Pugh Jr. \emph{The Journal of Physiology,} 1975. 
 
-A 'dark' object can have up to 14 elements 
+A 'dark' object can have up to 16 elements and no fewer than 2. 
 
 ```{r}
 # test
@@ -46,7 +46,7 @@ tmp<-BootDark(tmp,R = 150, T)
 ```
 
 
-The final `dark` object with 14 elements:
+The final `dark` object with 15 elements:
 
 ```{r}
 tmp

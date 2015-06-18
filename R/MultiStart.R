@@ -52,7 +52,8 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 		X = optim(a, Fn)
 		X = optim(X$par, Fn)
 		X = optim(X$par, Fn)
-		# X = optim(X$par, Fn)
+		# X = optim(X$par, Fn) 
+		# not worth writing a loop since cannot decide number of iterations
 		tmp[1:Pn] = X$par
 		tmp[8] = X$val
 		tmp[9] = X$con

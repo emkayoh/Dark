@@ -11,7 +11,7 @@ This data was extracted from Figure 1 in Rushton's paradox: rod dark adaptation 
 }
 \usage{data("dark")}
 \format{
-  \code{dark} is a list of 14 items, that are used or created by the functions in this package.
+  \code{dark} is a list of 15 items, that are used or created by the functions in this package.
 }
 \details{
 %%  ~~ If necessary, more details than the __description__ above ~~
@@ -32,6 +32,7 @@ The items are:
   \item $AIC: an array with the AICc scores for the three models
   \item $val: sum of residuals squared
   \item $call: the last function call that produced the object
+  \item $data: the source of the data
  }}
 %\source{
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
