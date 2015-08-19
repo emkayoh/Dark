@@ -16,11 +16,6 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 	if (debug) 
 		print("+++ missing values assigned OK")
 
-	resid = NULL
-	fit = NULL
-	val = NULL
-	Pn = NULL
-	AIC = NULL
 	if (is.list(obj)) { # checks that obj is a list but doesnt report failure todo
 		Res <- obj
 		Res$call = NULL
@@ -54,7 +49,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 		X = optim(X$par, Fn)
 		# X = optim(X$par, Fn) 
 		# not worth writing a loop since cannot decide number of iterations
-		tmp[1:Pn] = X$par
+		tmp = X$par
 		tmp[8] = X$val
 		tmp[9] = X$con
 		tmp
@@ -66,7 +61,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 
 
 	input <- numeric(9)
-	input[1:7] = p
+	input[1:Pn] = p[1:Pn]
 	input[8] = val
 	input[9] = 0
 	O <- rbind(input, O)
