@@ -9,7 +9,7 @@ P3 <- function(a, X) {
       sum((y - (a[1] + a[2] * exp(-x / a[3]))) ^ 2)
     }
   } else {
-    a[1] + a[2] / exp(-X * a[3])
+    a[1] + a[2] * exp(-X / a[3])
   }
 
 }
