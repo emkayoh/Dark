@@ -1,6 +1,6 @@
 MultiStart <- function(obj, repeats, draw, spread, debug) {
 
-	mFn <- c(1, 1, P3, 1, P5c, 1, P7c) # not sure if this is implemented !
+	mFn <- c(1, 1, P3, 1, P5c, P6c, P7c) # not sure if this is implemented !
 
 
 	if (missing(repeats)) 
@@ -55,7 +55,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 		tmp
 	}
 
-	Par <- matrix(p * rnorm(7 * repeats, 1, spread), 7, repeats)
+	Par <- matrix(p * rnorm(Pn * repeats, 1, spread), Pn, repeats)
 
 	O <- t(apply(Par, 2, OptJK))
 
