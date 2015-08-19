@@ -2,7 +2,7 @@ BootDark <- function(obj, R, graph, progress = F) {
 	.GlobalEnv$x <- obj$time
 	.GlobalEnv$y <- obj$thrs
 
-	mFn <- c(1, 1, P3, 1, P5c, 1, P7c)
+	mFn <- c(1, 1, P3, 1, P5c, P6c, P7c)
 
 	#set.seed(1234)
 	if (missing(R)) 
@@ -69,8 +69,11 @@ BootDark <- function(obj, R, graph, progress = F) {
 
 	Boot <- t(BSq)
 	#   S3<- -(Boot[4,]+Boot[6,])
+	if(Pn == 6){
+	  row.names(Boot) <- c("AT", "CC", "1/Tau_c", "Alpha", "Offset", "1/Tau_r", "")
+	}else{
 	row.names(Boot) <- c("CT", "CC", "Tau", "S2", "Alpha", "*S3*", "Beta")
-
+}
 	valid <- as.integer((Boot[, 1] * Boot[, 3]) > 0)
 	weight <- 1/abs(Boot[, 1] - Boot[, 3])
 
@@ -93,7 +96,7 @@ BootDark <- function(obj, R, graph, progress = F) {
 	if (graph) {
 		XL <- expression(bold(Time ~ (min)))
 		YL <- expression(bold(Threshold ~ (LU)))
-		plot(x, y, xlab = XL, ylab = YL, ylim=c(-5,0))
+		plot(x, y, xlab = XL, ylab = YL)
 		lines(x, Fn(p, x), col = 2)
 
 		lines(x, Fn(BSq[1, ], x), col = 3)
