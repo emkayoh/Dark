@@ -5,7 +5,7 @@
 Data that can be used to test other scripts.
 }
 \description{
-This script creates data in the form of a \emph{dark} object from specified times, parameters, and level of variability. It is used for testing and developing other scripts. 
+This script creates data in the form of a \emph{dark} object from specified times, parameters, and level of variability. It is used for testing and developing other scripts. Presently only the seven parameter model and its subsets are implemented. 
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{

@@ -7,9 +7,9 @@ A six parameter model
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
-An exponential decay followed by a second exponential decay. }
+An exponential decay followed by a second exponential decay.}
 \usage{
-P6c(x)
+P6c(a, X)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -43,14 +43,21 @@ P6c(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+set.seed(1234)
+x <- 0:20
+a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
+tmp <- TestData(x, a)
+y <- tmp$resid
+%% ~~~~~~~~~~~~~~~~~~~~~
+# P6c(TRUE)
+# Describes the model
 
-## The function is currently defined as
-function (x) 
-{
-  }
+# P6c(a)
+# The sum of squared residuals
+
+# P6c(a,x)
+# The fitted thresholds for given parameters 'a' and times 'x'
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
