@@ -16,18 +16,20 @@ P6c(a, X)
 %%     ~~Describe \code{x} here~~
 An array of parameters;
   %% insert table here
-  \tabular{lcc}{
+  \tabular{llc}{
 a: \tab parameter  \tab Units\cr\cr
-a[1]: \tab cone threshold \tab (log lum)\cr
-a[2]: \tab cone coefficient \tab (log lum)\cr
-a[3]: \tab cone time constant  \tab (minutes)\cr
-a[4]: \tab S2  \tab (log lum/ minute)\cr
-a[5]: \tab alpha point  \tab (minutes)\cr
-a[6]: \tab -(S2 + S3) \tab (log luminance)\cr
+a[1]: \tab absolute (rod) threshold  \tab (log lum)\cr
+a[2]: \tab cone coefficient \tab (log10 lum)\cr
+\tab or the threshold at t = 0 \cr
+a[3]: \tab 1/cone time constant  \tab (1/minutes)\cr
+a[4]: \tab alpha point  \tab (minutes)\cr
+a[5]: \tab absolute threshold offset \tab (log10 lum)\cr
+a[6]: \tab 1/rod time constant  \tab (1/minutes)\cr
 } 
-}
 
- \item{X}{ The times when the model predicts thresholds. 
+note that the cone threshold is a[1] + a[5] log10(lum)}
+
+ \item{X}{ The times in munutes when the model predicts thresholds. 
 %%     ~~Describe \code{x} here~~
 }
 }
@@ -69,7 +71,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 \examples{
 set.seed(1234)
 x <- 0:20
-a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
+a <- c(-2, 2, 1/2, 10, 3, 1/8)
 %% ~~~~~~~~~~~~~~~~~~~~~
 # P6c(TRUE)
 # Describes the model
