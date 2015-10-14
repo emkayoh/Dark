@@ -25,8 +25,12 @@ ModelSelect <- function(obj, P) {
 		    oP <- O[which(Out == min(Out)), ]
 		    oPval <- Out[which(Out == min(Out))]
 		    Opt <- optim(oP[1:ii],Fn)
-		    while (Opt$con) Opt <- optim(Opt$par, Fn)
-		    
+		    z=0
+		    while (Opt$con){
+		      z=z+1
+		      Opt <- optim(Opt$par, Fn)
+		      if(z>4) {break}
+		    }
 		    init <- oP[1:Fn(1)$Pn]
 		    opt <- Opt$par[1:Fn(1)$Pn]
 		    param[jj, 1:Fn(1)$Pn] <- opt
@@ -45,8 +49,12 @@ ModelSelect <- function(obj, P) {
 		    oP <- P[which(Out == min(Out)), ]
 		    oPval <- Out[which(Out == min(Out))]
 		    Opt <- optim(oP[1:ii], Fn)
-		    while (Opt$con) Opt <- optim(Opt$par, Fn)
-		    
+		    z=0
+		    while (Opt$con){
+		      z=z+1
+		      Opt <- optim(Opt$par, Fn)
+		      if(z>4) {break}
+		    }
 		    init <- oP[1:Fn(1)$Pn]
 		    opt <- Opt$par[1:Fn(1)$Pn]
 		    param[jj, 1:Fn(1)$Pn] <- opt
@@ -62,12 +70,14 @@ ModelSelect <- function(obj, P) {
 		    AIC[ii] <- AICc(obj)
 		  }
 		
-
-
 		jj = jj + 1
 	}
 
 	on.exit(rm(list = c("x", "y"), envir = .GlobalEnv))
-
+  
+	# put in here some error checking e.g. negative alpha or positive S2
+	# and return an AIC that disables that model choice and tells the 
+	# user what was wrong with the estimates
+	
 	list(AIC = AIC, param = param)
 }
