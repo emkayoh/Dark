@@ -71,7 +71,7 @@ Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
 
 \seealso{
 %% ~~objects to See Also as \code{\link{help}}, ~~~
-\code{\link{P3}},\code{\link{P5c},\code{\link{P6c}}
+\code{\link{P3}},\code{\link{P5c}},\code{\link{P6c}}
 }
 \examples{
 set.seed(1234)
