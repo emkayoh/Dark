@@ -1,3 +1,5 @@
+#' @export
+
 P3 <- function(a, X) {
   # a simple exponential decay
   x <- .GlobalEnv$x

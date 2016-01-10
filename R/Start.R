@@ -1,3 +1,5 @@
+#' @export
+
 Start <- function(obj, Reps) {
   if (missing(Reps)) 
     Reps <- 1500

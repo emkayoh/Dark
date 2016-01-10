@@ -1,3 +1,6 @@
+#' @export
+ 
+
 TestData <- function(x, theta, sse, repeatable) {
 	if (missing(repeatable)) 
 		repeatable = F

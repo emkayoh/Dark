@@ -1,3 +1,5 @@
+#' @export
+
 MultiStart <- function(obj, repeats, draw, spread, debug) {
 
 	mFn <- c(1, 1, P3, 1, P5c, P6c, P7c) # not sure if this is implemented !

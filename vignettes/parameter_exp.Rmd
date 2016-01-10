@@ -86,6 +86,8 @@ The linear (on a log-lin plot) rod phase S2 is described in detail in Lamb and P
 ```{r, fig.align='center', fig.width=8, fig.height=8, echo=FALSE}
 library(Dark)
 data(dark)
+source('~/GitHub/Dark/R/H.R')
+source('~/GitHub/Dark/R/P7c.R')
 tmp<-dark
   par(las = 1, bty = "n", 
       mfrow = c(1, 1), 
