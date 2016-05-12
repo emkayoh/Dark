@@ -1,5 +1,3 @@
-#' @export
-
 GetData<- function(path,.....){
   # where 'path' is file/path/to/data
   if(missing (path)){

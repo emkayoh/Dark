@@ -12,7 +12,6 @@ vignette: >
 The following plots explain the parameters of the model used to predict thresholds ($Thrs$) following a photo-bleach which transforms more than 30% of the retinal photopigment. 
 These data were extracted from Figure 1 in Pugh 1975. 
 
-
 There are typically three phases to the recovery of visual sensitivity in dark adaptation data; an early cone phase, the second rod phase sometimes called S2, and a final rod phase or S3 and are shown in the figure below. 
 
 The initial phase depicts the cone response ($Thrs_c$), and can be represented by three parameters; the absolute cone threshold ($\theta_1$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), the cone coefficient  ($\theta_2$, log$_{10}$(cd.m$^{\text{-}2}$) scotopic), and the time constant of cone recovery, sometimes known as tau ($\theta_3$, min).

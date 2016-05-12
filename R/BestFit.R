@@ -1,5 +1,3 @@
-#' @export
-
 BestFit <- function(obj, MSC, draw) {
   .GlobalEnv$x <- obj$time
   .GlobalEnv$y <- obj$thrs

@@ -1,5 +1,3 @@
-#' @export
-
 BootDark <- function(obj, R, graph, progress = F) {
 	.GlobalEnv$x <- obj$time
 	.GlobalEnv$y <- obj$thrs

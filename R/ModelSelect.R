@@ -1,5 +1,3 @@
-#' @export
-
 ModelSelect <- function(obj, P) {
 
 	.GlobalEnv$x <- obj$time

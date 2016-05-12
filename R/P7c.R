@@ -1,5 +1,3 @@
-#' @export
-
 P7c <- function(a, X) {
   # Seven Param Exp + Bilinear and two fixed transition rates
   x <- .GlobalEnv$x

@@ -1,5 +1,3 @@
-#' @export
-
 Declutter <- function(tmp, delta) {
 	# function that takes data from early experiments where double points are recorded
 	if (missing(delta)) 

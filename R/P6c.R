@@ -1,6 +1,3 @@
-#' @export
-
-
 P6c <- function(a, X) {
   # Six Param biexponential model with a logistic transition
  K<- -log10(exp(1)) # factor to convert from 1/Tau to S2
