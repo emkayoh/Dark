@@ -20,7 +20,6 @@ An array of parameters;
 a: \tab parameter  \tab Units\cr\cr
 a[1]: \tab absolute (rod) threshold  \tab (log lum)\cr
 a[2]: \tab cone coefficient \tab (log10 lum)\cr
-\tab or the threshold at t = 0 \cr
 a[3]: \tab 1/cone time constant  \tab (1/minutes)\cr
 a[4]: \tab alpha point  \tab (minutes)\cr
 a[5]: \tab absolute threshold offset \tab (log10 lum)\cr
@@ -29,7 +28,7 @@ a[6]: \tab 1/rod time constant  \tab (1/minutes)\cr
 
 note that the cone threshold is a[1] + a[5] log10(lum)}
 
- \item{X}{ The times in munutes when the model predicts thresholds. 
+ \item{X}{ The times in minutes when the model predicts thresholds. 
 %%     ~~Describe \code{x} here~~
 }
 }

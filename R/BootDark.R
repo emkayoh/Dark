@@ -56,7 +56,7 @@ BootDark <- function(obj, R, graph, progress = F) {
 	BS <- matrix(0, R, 7) #NULL
 	for (ii in 1:R) { # put apply variant here
 		y <<- fit + sample(resid, replace = T)
-		BS[ii, 1:Pn] <- optim(p, Fn)$par
+		BS[ii, 1:Pn] <- optim(p, Fn)$par[1:Pn]
 		# coud be worthwhile investigating a 
 		# while loop here to ensure convergence
 
