@@ -1,3 +1,5 @@
+#' @export 
+
 MultiStart <- function(obj, repeats, draw, spread, debug) {
 
 	mFn <- c(1, 1, P3, 1, P5c, P6c, P7c) # not sure if this is implemented !
@@ -43,11 +45,11 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 
 	OptJK <- function(a) {
 		tmp <- numeric(9)
-		# two iterations of the optim fn could allow 1000 cycles, will compare later
-		X = optim(a, Fn)
-		X = optim(X$par, Fn)
-		X = optim(X$par, Fn)
-		# X = optim(X$par, Fn) 
+		# two iterations of the stats::optim fn could allow 1000 cycles, will compare later
+		X = stats::optim(a, Fn)
+		X = stats::optim(X$par, Fn)
+		X = stats::optim(X$par, Fn)
+		# X = stats::optim(X$par, Fn) 
 		# not worth writing a loop since cannot decide number of iterations
 		tmp = X$par
 		tmp[8] = X$val
@@ -55,7 +57,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 		tmp
 	}
 
-	Par <- matrix(p * rnorm(Pn * repeats, 1, spread), Pn, repeats)
+	Par <- matrix(p * stats::rnorm(Pn * repeats, 1, spread), Pn, repeats)
 
 	O <- t(apply(Par, 2, OptJK))
 
@@ -66,7 +68,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 	input[9] = 0
 	O <- rbind(input, O)
 	if (debug) 
-		print(head(O))
+		print(utils::head(O))
 
 	Test <- sum(O[, 9] == 0)
 	if (debug) 
@@ -76,7 +78,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 		O <- O[idx, ]
 	}
 	if (debug) 
-		print(head(idx))
+		print(utils::head(idx))
 
 	if (length(O) != 9) {
 		idx <- order(O[, 8])
@@ -100,8 +102,8 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 	resid <- (y - fit)
 
 	if (draw) {
-		plot(x, y)
-		lines(x, fit)
+		graphics::plot(x, y)
+		graphics::lines(x, fit)
 	}
 	#### create output object 
 	Res$call <- match.call()
@@ -115,7 +117,7 @@ MultiStart <- function(obj, repeats, draw, spread, debug) {
 	Res$Mod = obj$Mod
 	Res$Pn = obj$Pn
 	Res$AIC = AIC
-	Res$R2 <- 1 - (var(resid)/var(y))
+	Res$R2 <- 1 - (stats::var(resid)/stats::var(y))
 
 	if (debug) 
 		Res$O <- O

@@ -1,8 +1,8 @@
 Package: Dark
 Type: Package
 Title: The Analysis of Dark Adaptation Data
-Version: 0.9.6
-Date: 2015-06-12
+Version: 0.9.8
+Date: 2016-06-01
 Author: Jeremiah MF Kelly
 Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 Description: The recovery of visual sensitivity in a dark environment is known
@@ -23,5 +23,6 @@ BugReports: https://github.com/emkayoh/Dark/issues
 Suggests:
     knitr,
     rmarkdown,testthat
+Imports: stats,grDevices, graphics, utils
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1

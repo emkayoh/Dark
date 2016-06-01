@@ -1,3 +1,5 @@
+#' @export 
+
 BootDark <- function(obj, R, graph, progress = F) {
 	.GlobalEnv$x <- obj$time
 	.GlobalEnv$y <- obj$thrs
@@ -12,7 +14,7 @@ BootDark <- function(obj, R, graph, progress = F) {
 
 
 	Parms = NULL
-	qJK <- function(a) quantile(a, c(2.5, 50, 97.5)/100)
+	qJK <- function(a) stats::quantile(a, c(2.5, 50, 97.5)/100)
 
 	if (is.list(obj)) {
 		out <- obj
@@ -39,9 +41,9 @@ BootDark <- function(obj, R, graph, progress = F) {
 	Fn = mFn[[Pn]]
 
 	if (is.null(resid)) {
-		O <- optim(p, Fn)
+		O <- stats::optim(p, Fn)
 		while (O$con) {
-			O <- optim(O$par, Fn)
+			O <- stats::optim(O$par, Fn)
 		}
 		p <- O$par
 		fit <- Fn(p, x)
@@ -49,17 +51,17 @@ BootDark <- function(obj, R, graph, progress = F) {
 		val <- O$val
 	}
 	if (progress) 
-		pb <- txtProgressBar(min = 0, max = R, style = 3)
+		pb <- utils::txtProgressBar(min = 0, max = R, style = 3)
 
 	BS <- matrix(0, R, 7) #NULL
 	for (ii in 1:R) { # put apply variant here
 		y <<- fit + sample(resid, replace = T)
-		BS[ii, 1:Pn] <- optim(p, Fn)$par[1:Pn]
+		BS[ii, 1:Pn] <- stats::optim(p, Fn)$par[1:Pn]
 		# coud be worthwhile investigating a 
 		# while loop here to ensure convergence
 
 		if (progress) 
-			setTxtProgressBar(pb, ii)
+			utils::setTxtProgressBar(pb, ii)
 	}
 
 	if (progress) 
@@ -90,18 +92,18 @@ BootDark <- function(obj, R, graph, progress = F) {
 	out$Mod = obj$Mod
 	out$Pn = obj$Pn
 	out$AIC = obj$AIC
-	out$R2 <- 1 - (var(resid)/var(obj$thrs))
+	out$R2 <- 1 - (stats::var(resid)/stats::var(obj$thrs))
 
 
 	if (graph) {
 		XL <- expression(bold(Time ~ (min)))
 		YL <- expression(bold(Threshold ~ (LU)))
 		X<- seq(0, max(x), by=0.2)
-		plot(x, y, xlab = XL, ylab = YL)
-		lines(X, Fn(p, X), col = 2)
+		graphics::plot(x, y, xlab = XL, ylab = YL)
+		graphics::lines(X, Fn(p, X), col = 2)
 
-		lines(X, Fn(BSq[1, ], X), col = 3)
-		lines(X, Fn(BSq[3, ], X), col = 3)
+		graphics::lines(X, Fn(BSq[1, ], X), col = 3)
+		graphics::lines(X, Fn(BSq[3, ], X), col = 3)
 
 	}
 	on.exit(rm(list = c("x", "y"), envir = .GlobalEnv))

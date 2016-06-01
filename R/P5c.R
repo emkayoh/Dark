@@ -1,3 +1,5 @@
+#' @export 
+
 P5c <- function(a, X) {
   # Five Param Exp + Linear and one fixed transition rates
   x <- .GlobalEnv$x

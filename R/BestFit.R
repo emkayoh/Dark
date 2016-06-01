@@ -1,3 +1,5 @@
+#' @export 
+
 BestFit <- function(obj, MSC, draw) {
   .GlobalEnv$x <- obj$time
   .GlobalEnv$y <- obj$thrs
@@ -14,17 +16,17 @@ BestFit <- function(obj, MSC, draw) {
   
   oP <- MSC$param[idx2, ]
   
-  Opt <- optim(oP[1:Mod], Fn)
-  while (Opt$con) Opt <- optim(Opt$par, Fn)
+  Opt <- stats::optim(oP[1:Mod], Fn)
+  while (Opt$con) Opt <- stats::optim(Opt$par, Fn)
   opt <- Opt$par
   
   if (draw) {
     X <- seq(0, max(obj$time), length.out = 100)
     
-    if (length(dev.list()) == 0) {
-      plot(obj$time, obj$thrs)
+    if (length(grDevices::dev.list()) == 0) {
+      graphics::plot(obj$time, obj$thrs)
     }
-    lines(X, Fn(opt, X), col = 2)
+    graphics::lines(X, Fn(opt, X), col = 2)
   }
 
   Y <- Fn(opt, obj$time)
@@ -42,7 +44,7 @@ BestFit <- function(obj, MSC, draw) {
   Res$resid <- obj$thrs - Y
   Res$Mod = Fn(Mod)$Mod
   Res$val = Opt$val
-  Res$R2 <- 1 - (var(obj$thrs - Y)/var(obj$thrs))
+  Res$R2 <- 1 - (stats::var(obj$thrs - Y)/stats::var(obj$thrs))
   
   on.exit(rm(list = c("x", "y"), envir = .GlobalEnv))
   class(Res) <- "dark"

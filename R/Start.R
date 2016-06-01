@@ -1,3 +1,5 @@
+#' @export 
+
 Start <- function(obj, Reps) {
   if (missing(Reps)) 
     Reps <- 1500
@@ -6,7 +8,7 @@ Start <- function(obj, Reps) {
   y <- obj$thrs
   
   xSp <- 15 #mean(range(x))
-  ySp <- quantile(y, 67/100, names = FALSE) # mean(range(y))
+  ySp <- stats::quantile(y, 67/100, names = FALSE) # mean(range(y))
   
   set.seed(1234)
   

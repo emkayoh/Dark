@@ -1,3 +1,5 @@
+#' @export 
+
 ModelSelect <- function(obj, P) {
 
 	.GlobalEnv$x <- obj$time
@@ -24,11 +26,11 @@ ModelSelect <- function(obj, P) {
 		    Out <- apply(O, 1, Fn)
 		    oP <- O[which(Out == min(Out)), ]
 		    oPval <- Out[which(Out == min(Out))]
-		    Opt <- optim(oP[1:ii],Fn)
+		    Opt <- stats::optim(oP[1:ii],Fn)
 		    z=0
 		    while (Opt$con){
 		      z=z+1
-		      Opt <- optim(Opt$par, Fn)
+		      Opt <- stats::optim(Opt$par, Fn)
 		      if(z>4) {break}
 		    }
 		    init <- oP[1:Fn(1)$Pn]
@@ -48,11 +50,11 @@ ModelSelect <- function(obj, P) {
 		    Out <- apply(P, 1, FUN = Fn)
 		    oP <- P[which(Out == min(Out)), ]
 		    oPval <- Out[which(Out == min(Out))]
-		    Opt <- optim(oP[1:ii], Fn)
+		    Opt <- stats::optim(oP[1:ii], Fn)
 		    z=0
 		    while (Opt$con){
 		      z=z+1
-		      Opt <- optim(Opt$par, Fn)
+		      Opt <- stats::optim(Opt$par, Fn)
 		      if(z>4) {break}
 		    }
 		    init <- oP[1:Fn(1)$Pn]

@@ -1,3 +1,5 @@
+#' @export 
+
 AICc <- function(obj) {
   N <- length(obj$time)
   P <- obj$Pn

@@ -1,3 +1,5 @@
+#' @export 
+
 H <- function(x, k = 100, t) {
 # x is the measured time
 # k is the transition constant, set arbitrarily high
