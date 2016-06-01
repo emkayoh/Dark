@@ -13,7 +13,7 @@ The following describes the work flow for the analysis of dark adaptation data. 
 
 A 'dark' object can have up to 16 elements and no fewer than 2. 
 
-```{r, cache=TRUE}
+```{r}
 # test
 library(Dark)
 data(dark)
@@ -32,14 +32,6 @@ plot(tmp$time, tmp$thrs)
 P<-Start(tmp, 2000)
 MSC<-ModelSelect(tmp,P)
 MSC
-```
-
-We can then use the `BestFit` to find an optimal fit using the starting points from the brute force search. 
-
-```{r, fig.width=6, fig.height=6, fig.align='center'}
-set.seed(1234)
-par(las=1, bty='n',mfrow=c(1,1))
-plot(tmp$time, tmp$thrs)
 tmp<-BestFit(tmp,MSC, T)
 ```
 
