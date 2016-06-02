@@ -36,8 +36,7 @@ print.table(Pd,3)
 #  MSC
 
 ## ---- echo=FALSE---------------------------------------------------------
-source("../R/H.R")
-source("../R/P7c.R")
+
 MSCd <- structure(list(AIC = c(0, 0, -347.688152541027, 0, -353.337417397606, 
 -556.296993756504, -561.687551083725), param = structure(c(-7.03677859813905, 
 -4.84533369033486, -5.52767312215107, -1.97221068357342, 6.23084047079413, 
@@ -57,6 +56,8 @@ print(MSCd, 3)
 #  tmp<-BootDark(tmp,R = 500)
 
 ## ---- fig.width=6, fig.height=6, fig.align='center', echo=FALSE----------
+source("../R/H.R")
+source("../R/P7c.R")
 par(las=1, bty='n',mfrow=c(1,1))
 XL <- expression(bold(Time~(min)))
 YL <- expression(bold(Threshold~(LU)))

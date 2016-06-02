@@ -1,6 +1,5 @@
 ## ---- fig.align='center', fig.width=8, fig.height=8, echo=FALSE----------
-library(Dark)
-data(dark)
+load("dark.rda")
 tmp<-dark
   par(las = 1, bty = "n", 
       mfrow = c(1, 1), 
@@ -52,10 +51,8 @@ Sym <- expression(theta[3] ~ Cone ~ Time ~ Constant ~ (tau))
 text(3, CT + CC/2, Sym, adj = c(0, 0), cex = 1.2)
 
 ## ---- fig.align='center', fig.width=8, fig.height=8, echo=FALSE----------
-library(Dark)
-data(dark)
-source('~/GitHub/Dark/R/H.R')
-source('~/GitHub/Dark/R/P7c.R')
+source('../R/H.R')
+source('../R/P7c.R')
 tmp<-dark
   par(las = 1, bty = "n", 
       mfrow = c(1, 1), 
