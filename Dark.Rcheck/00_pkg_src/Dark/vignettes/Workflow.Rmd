@@ -1,0 +1,112 @@
+---
+title: "Workflow"
+author: "Dr Jeremiah MF Kelly"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+The following describes the work flow for the analysis of dark adaptation data. The data were extracted from Figure 1 in Rushton's paradox: rod dark adaptation after flash photolysis, E.N.Pugh Jr. \emph{The Journal of Physiology,} 1975. 
+
+A 'dark' object can have up to 16 elements and no fewer than 2. 
+
+```{r, eval=FALSE}
+library(Dark)
+tmp <- dark
+names(tmp)
+```
+```{r, echo=FALSE}
+load("dark.rda")
+tmp<-dark
+Names <- c("time", "thrs", "fit", "resid", "R2", "Bootstrap", "weight", 
+"valid", "Mod", "Pn", "AIC", "data", "opt", "call", "val")
+print(Names)
+```
+
+The raw data are shown below
+```{r, fig.width=6, fig.height=6, fig.align='center'}
+par(las=1, bty='n',mfrow=c(1,1))
+XL <- expression(bold(Time~(min)))
+YL <- expression(bold(Threshold~(LU)))
+plot(tmp$time, tmp$thrs, xlab = XL, ylab=YL)
+```
+
+
+The function `Start` generates an array of possible parameter values, *P*, calculated from the data, which are then passed to `ModelSelect`. 
+
+```{r, eval=FALSE}
+set.seed(1234)
+P <-Start(tmp, 2000)
+head(P,3)
+```
+The first three rows are shown below
+
+```{r, echo=FALSE} 
+Pd <- structure(c(-1.93048394296102, -0.966243347355156, -0.990918795667905, 
+0.253616641335044, 0.420301711722179, 1.32959014056482, 3.97646484343339, 
+0.763150661132819, 0.905683974690625, -0.389894947473737, -0.4064032016008, 
+-0.182491245622811, 2.52208104052026, 6.96883941970985, 3.12198099049525, 
+0.130565282641321, 0.207403701850925, 0.0885442721360681, 32.5607121101566, 
+32.9919673191487, 29.4211741886944), .Dim = c(3L, 7L), .Dimnames = list(
+    NULL, c("CT", "CC", "Tau", "S2", "Alph", "S3", "Beta")))
+print.table(Pd,3)
+```
+
+The data frame `P` is processed by `ModelSelect`, this finds the row of parameters that give the lowest sum of squared errors and calculates an `AIC` score. This is not calculated again. 
+
+```{r, eval=FALSE}
+MSC<-ModelSelect(tmp,P)
+MSC
+```
+
+```{r, echo=FALSE}
+
+MSCd <- structure(list(AIC = c(0, 0, -347.688152541027, 0, -353.337417397606, 
+-556.296993756504, -561.687551083725), param = structure(c(-7.03677859813905, 
+-4.84533369033486, -5.52767312215107, -1.97221068357342, 6.23084047079413, 
+4.01859727139177, 1.43155445018767, 1.39834034016783, 28.1212523680337, 
+17.2254594347471, 0.557811726205019, 1.62283784201578, 0, -0.0365810342284519, 
+9.61920222958987, -0.227896945728703, 0, 9.40371211032976, 3.50297041829524, 
+8.73599874809917, 0, 0, 0.0972021474126348, 0.180809685149208, 
+0, 0, 0, 19.4250494832971), .Dim = c(4L, 7L))), .Names = c("AIC", 
+"param"))
+print(MSCd, 3)
+```
+Then the function `BestFit` optimises the model using the lowest `AIC` score to select the model and the best initial estimate of the parameters for that model.
+
+```{r, eval =FALSE}
+tmp<-BestFit(tmp,MSC)
+```
+
+
+A further function `MultiStart` ensures that the estimated parameter values are optimal by repeatedly optimising the model with starting locations in the vicinity of the initial estimate. Finally `BootDark` uses bootstrap methods to calculate confidence intervals for the parameter estimates.
+
+
+```{r, eval=FALSE}
+tmp<-MultiStart(tmp,repeats = 25)
+tmp<-BootDark(tmp,R = 500)
+```
+
+The data and model are shown in the figure below;
+```{r, fig.width=6, fig.height=6, fig.align='center', echo=FALSE}
+source("../R/H.R")
+source("../R/P7c.R")
+par(las=1, bty='n',mfrow=c(1,1))
+XL <- expression(bold(Time~(min)))
+YL <- expression(bold(Threshold~(LU)))
+plot(tmp$time, tmp$thrs, xlab = XL, ylab=YL)
+X <- tmp$time
+lines(X, tmp$fit)
+lines(X, P7c(tmp$Bootstrap[,1], X), col = 2)
+lines(X, P7c(tmp$Bootstrap[,3], X), col = 2)
+
+```
+
+The final `dark` object with 15 elements:
+
+```{r}
+print(tmp,2)
+```
