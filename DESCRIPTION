@@ -23,6 +23,6 @@ BugReports: https://github.com/emkayoh/Dark/issues
 Suggests:
     knitr,
     rmarkdown,testthat
-Imports: stats,grDevices, graphics, utils
+Imports: stats, grDevices, graphics, utils
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
