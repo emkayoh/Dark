@@ -24,7 +24,7 @@ The minimum time in seconds between responses. Thresholds set within two seconds
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
-In early data collected with analogue equipment it was psossible for a subject to return multiple button presses when setting just one threshold. This data is characterised by clusters of points within a very short time. This function removes the exptra presses. It is rarely need for data collected from digital equipment. 
+In early data collected with analogue equipment it was possible for a subject to return multiple button presses when setting just one threshold. This data is characterised by clusters of points within a very short time. This function removes the extra presses. It is rarely needed for data collected from digital equipment. 
 }
 \value{
 Returns an object with the same elements as 'tmp' but with object$time and object$thrs altered. 
