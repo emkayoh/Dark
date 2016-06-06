@@ -8,8 +8,8 @@
 \tabular{ll}{
 Package: \tab Dark\cr
 Type: \tab Package\cr
-Version: \tab 0.9.6\cr
-Date: \tab 2015-06-12\cr
+Version: \tab 0.9.8\cr
+Date: \tab 2016-06-1\cr
 License: \tab GPL-3\cr
 } 
 Dark adaptation is the recovery of visual sensitivity in a dark environment and can be described by a physiological model. This package contains a series of functions to analyse data collected during dark adaptation.  
