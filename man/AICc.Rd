@@ -34,7 +34,7 @@ The value returned is an indication of the information lost by fitting a particu
 }
 \references{
 %% ~put references to the literature/web site here ~
-See \url{http://en.wikipedia.org/wiki/Akaike_information_criterion}. 
+See \url{https://en.wikipedia.org/wiki/Akaike_information_criterion}. 
 
 K. Burnham and D. Anderson. Model selection and multi-model inference: a practical information- theoretic approach. Springer, 2002.
 

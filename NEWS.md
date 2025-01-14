@@ -1,4 +1,7 @@
-## NEWS
+# Dark 0.9.9
 
-2025-01-14  Responded to warning from CRAN to update Rd files. 
-            Some spelling mistakes corrected and a minor edit to `Declutter.R` made.    JMF Kelly
+## 2025-01-14
+
+* Responded to warning from CRAN to update Rd files.    JMF Kelly
+* Some spelling mistakes corrected.   JMF Kelly
+* Minor edit to `Declutter.R` made to correct class comaprison with a string   JMF Kelly

@@ -1,0 +1,16 @@
+AICc                    Akaike information criterion
+BestFit                 BestFit
+BootDark                BootDark
+Dark-package            Dark: A package to analyse dark adaptation data
+Declutter               Declutter
+GetData                 GetData
+H                       This is a simple switch function.
+ModelSelect             ModelSelect
+MultiStart              MultiStart
+P3                      Three parameter model.
+P5c                     Five parameter model.
+P6c                     A six parameter model
+P7c                     Seven parameter model
+Start                   Start
+TestData                Data that can be used to test other scripts.
+dark                    Dark adaptation data.

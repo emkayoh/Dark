@@ -1,0 +1,246 @@
+Hmm ... looks like a package
+Converting parsed Rd's to LaTeX .
+Creating pdf output from LaTeX ...
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-09-10>
+(./Rd2.tex
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file Rd2.aux.
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+No file Rd2.toc.
+
+[1{/Users/mqbxgjk2/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
+[2]
+[3]
+[4]
+[5]
+[6]
+[7] (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+[8{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}]
+[9]
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16]
+[17]
+[18]
+[19] [20]
+No file Rd2.ind.
+
+[21]
+[22] (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+pdfTeX warning (dest): name{Rfn.optim} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Rfn.AIC} has been referenced but does not exist, replaced by a fixed one
+
+</Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (22 pages, 132229 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (88 entries accepted, 0 rejected).
+Sorting entries....done (568 comparisons).
+Generating output file Rd2.ind....done (130 lines written, 1 warning).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-09-10>
+(./Rd2.tex
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.toc
+[1{/Users/mqbxgjk2/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}])
+[2]
+[3]
+[4]
+[5]
+[6]
+[7] (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+[8{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}]
+[9]
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16]
+[17]
+[18]
+[19] [20] (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.ind
+[21]
+[22]
+
+LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
+(Font)              using `T1/zi4/m/n' instead on input line 81.
+
+
+[23]
+
+[24]) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+pdfTeX warning (dest): name{Rfn.optim} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Rfn.AIC} has been referenced but does not exist, replaced by a fixed one
+
+</Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (24 pages, 147753 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (88 entries accepted, 0 rejected).
+Sorting entries....done (568 comparisons).
+Generating output file Rd2.ind....done (130 lines written, 1 warning).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-09-10>
+(./Rd2.tex
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.toc
+[1{/Users/mqbxgjk2/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}])
+[2]
+[3]
+[4]
+[5]
+[6]
+[7] (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+[8{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}]
+[9]
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16]
+[17]
+[18]
+[19] [20] (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.ind
+[21]
+[22]
+
+LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
+(Font)              using `T1/zi4/m/n' instead on input line 81.
+
+
+[23]
+
+[24]) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+pdfTeX warning (dest): name{Rfn.optim} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Rfn.AIC} has been referenced but does not exist, replaced by a fixed one
+
+</Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (24 pages, 148749 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.16 [TeX Live 2022] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (88 entries accepted, 0 rejected).
+Sorting entries....done (568 comparisons).
+Generating output file Rd2.ind....done (130 lines written, 1 warning).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-09-10>
+(./Rd2.tex
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo)) (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/eucal.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/times.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty `inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex))))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty)) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/t1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.out) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/t1zi4.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.toc
+[1{/Users/mqbxgjk2/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}])
+[2]
+[3]
+[4]
+[5]
+[6]
+[7] (/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ts1zi4.fd)
+[8{/Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}]
+[9]
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16]
+[17]
+[18]
+[19] [20] (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.ind
+[21]
+[22]
+
+LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
+(Font)              using `T1/zi4/m/n' instead on input line 81.
+
+
+[23]
+
+[24]) (/private/var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T/RtmpVNCutm/Rd2pdfc07432f53fde/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+pdfTeX warning (dest): name{Rfn.optim} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Rfn.AIC} has been referenced but does not exist, replaced by a fixed one
+
+</Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/mqbxgjk2/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (24 pages, 148736 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘Dark-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /var/folders/cb/8t0qy5hs1jx3j_yxf7jbkn2r0000gp/T//RtmpVNCutm/Rd2pdfc07432f53fde'

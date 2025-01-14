@@ -18,7 +18,7 @@ Description: The recovery of visual sensitivity in a dark environment is known
     workflow and parts of the object are updated as it is processed.
 License: GPL-3
 LazyData: yes
-URL: https://github.com/emkayoh/Dark, http://www.nihr.ac.uk
+URL: https://github.com/emkayoh/Dark, https://www.nihr.ac.uk
 BugReports: https://github.com/emkayoh/Dark/issues
 Suggests: knitr, rmarkdown,testthat
 Imports: stats, grDevices, graphics, utils

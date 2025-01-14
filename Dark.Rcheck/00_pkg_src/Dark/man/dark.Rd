@@ -41,9 +41,9 @@ The items are:
 %%  ~~ possibly secondary sources and usages ~~
 E. Pugh. Rushton's paradox: rod dark adaptation after flash photolysis. The Journal of Physiology, 248(2):413, 1975.
 
-\url{http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1975.sp010982/abstract}
+\url{https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1975.sp010982}
 
-\url{http://onlinelibrary.wiley.com/doi/10.1113/jphysiol.1975.sp010982/pdf}
+\url{https://physoc.onlinelibrary.wiley.com/doi/pdf/10.1113/jphysiol.1975.sp010982}
 }
 \examples{
 data(dark)

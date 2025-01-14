@@ -36,9 +36,9 @@ For times before 't' the output is less than or equal to 0.5, after this time th
 }
 \references{
 %% ~put references to the literature/web site here ~
-The logistic function: \url{http://en.wikipedia.org/wiki/Logistic_function}
+The logistic function: \url{https://en.wikipedia.org/wiki/Logistic_function}
 
-The step function: \url{http://en.wikipedia.org/wiki/Heaviside_step_function}
+The step function: \url{https://en.wikipedia.org/wiki/Heaviside_step_function}
 }
 \author{
 Jeremiah MF Kelly

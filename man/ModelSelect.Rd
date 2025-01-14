@@ -42,7 +42,7 @@ Returns a list
 }
 \references{
 %% ~put references to the literature/web site here ~
-\url{http://en.wikipedia.org/wiki/Brute-force_search}
+\url{https://en.wikipedia.org/wiki/Brute-force_search}
 }
 \author{
 %%  ~~who you are~~

@@ -6,11 +6,11 @@ Test scripts
 
 
 #### Build Status 
-[![Build Status](https://travis-ci.org/emkayoh/Dark.svg?branch=master)](https://travis-ci.org/emkayoh/Dark)
+[![Build Status](https://app.travis-ci.com/emkayoh/Dark.svg?branch=master)](https://app.travis-ci.com/emkayoh/Dark)
 
-[![License](http://img.shields.io/badge/license-GPL%20%283%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0-standalone.html) 
+[![License](https://img.shields.io/badge/license-GPL%20%283%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0-standalone.html) 
 
-<!-- [![Downloads](http://cranlogs.r-pkg.org/badges/Dark?color=brightgreen)](http://cran.rstudio.com/package=Dark)regular html comment --> 
+<!-- [![Downloads](https://cranlogs.r-pkg.org/badges/Dark?color=brightgreen)](https://cran.rstudio.com/package=Dark)regular html comment --> 
 
 
 ### Introduction
@@ -21,7 +21,7 @@ Data are collected using custom built laboratory devices and computer controlled
 The suite of scripts uses a list referred to as a *dark* object, an initial work through of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your own work. 
 
 ### Acknowledgement
-This work presents independent research funded by the [National Institute for Health Research](http://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
+This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
 
 
 ### Contact
@@ -82,7 +82,7 @@ email or raise an issue for further help.
 <!--  #### Status
 
 The package is under active development with releases to
-[CRAN](http://cran.r-project.org) about once a month.
+[CRAN](https://cran.r-project.org) about once a month.
 
 #### Author
 Jeremiah MF Kelly

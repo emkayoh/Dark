@@ -1,0 +1,700 @@
+
+R version 4.4.0 (2024-04-24) -- "Puppy Cup"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "Dark"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('Dark')
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> base::assign(".old_wd", base::getwd(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("AICc")
+> ### * AICc
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: AICc
+> ### Title: Akaike information criterion
+> ### Aliases: AICc
+> ### Keywords: models regression utilities math
+> 
+> ### ** Examples
+> 
+> AICc(dark)
+[1] -561.7096
+> 
+> 
+> 
+> cleanEx()
+> nameEx("BestFit")
+> ### * BestFit
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: BestFit
+> ### Title: BestFit
+> ### Aliases: BestFit
+> ### Keywords: models optimization regression utilities data
+> 
+> ### ** Examples
+> 
+> tmp <- TestData(0:20)
+> P<-Start(tmp,100)
+> MSC<-ModelSelect(tmp, P)
+> BestFit(tmp, MSC)
+$time
+ [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+$thrs
+ [1] -0.1085050 -0.6003126 -1.0093998 -0.6739022 -0.9246119 -1.1353713
+ [7] -0.9130961 -1.1112065 -1.3799363 -1.7727714 -1.6981064 -2.1324605
+[13] -2.5475959 -3.0635950 -2.5251554 -2.7677824 -2.8028041 -2.6765227
+[19] -2.7377603 -2.8171333 -2.8008284
+
+$resid
+ [1] -0.001395539  0.036630063 -0.170188459  0.242527133  0.021296046
+ [6] -0.178209607  0.048361902 -0.032439046 -0.017401575 -0.126856578
+[11]  0.231040757  0.079862639 -0.052118380 -0.295855237  0.238007120
+[16] -0.004533795 -0.039469862  0.086896988  0.025744810 -0.053542790
+[21] -0.037152614
+
+$fit
+ [1] -0.1071094 -0.6369427 -0.8392114 -0.9164293 -0.9459080 -0.9571617
+ [7] -0.9614580 -1.0787675 -1.3625347 -1.6459148 -1.9291472 -2.2123231
+[13] -2.4954775 -2.7677398 -2.7631625 -2.7632486 -2.7633343 -2.7634197
+[19] -2.7635051 -2.7635905 -2.7636758
+
+$thet
+[1] -1.00  1.00  1.00 -0.24  6.00  0.20 13.00
+
+$sse
+[1] 0.03
+
+$data
+[1] "Test_data_0.03"
+
+$opt
+[1] -0.9641108  0.8570014  1.0384591 -0.2831411  6.5914779  0.2830557 12.9450694
+
+$call
+BestFit(obj = tmp, MSC = MSC)
+
+$AIC
+[1]   0.00000   0.00000 -47.66046   0.00000 -43.01739 -41.24270 -62.66842
+
+$Pn
+[1] 7
+
+$Mod
+[1] "P7c"
+
+$val
+[1] 0.3618174
+
+$R2
+[1] 0.9790381
+
+attr(,"class")
+[1] "dark"
+> 
+> 
+> 
+> cleanEx()
+> nameEx("BootDark")
+> ### * BootDark
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: BootDark
+> ### Title: BootDark
+> ### Aliases: BootDark
+> ### Keywords: models optimization regression utilities data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> Time<- seq(0,20)
+> tmp<- TestData(Time)
+> P<-Start(tmp,1000)
+> MSC<-ModelSelect(tmp, P)
+> tmp2<-BestFit(tmp, MSC)
+> tmp3<-MultiStart(tmp2,10)
+> BootDark(tmp3,50)
+$time
+ [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+$thrs
+ [1] -0.2090699 -0.5840684 -0.6768340 -1.3564997 -0.9073578 -0.9056106
+ [7] -1.0970691 -1.3337675 -1.5774305 -1.8740357 -2.0426068 -2.3729089
+[13] -2.5744450 -2.6688331 -2.5538099 -2.7791017 -2.8885093 -2.9978236
+[19] -3.0250024 -2.5015651 -2.9367752
+
+$resid
+ [1] -0.02353582  0.04067297  0.17004541 -0.39726945  0.10869619  0.13918313
+ [7] -0.03773968 -0.08001655  0.05619633  0.05553555  0.11780201 -0.03230369
+[13] -0.09310273 -0.07753588  0.12341148 -0.03472568 -0.09164339 -0.15992773
+[19] -0.15503323  0.39347643 -0.02213382
+
+$fit
+ [1] -0.1855341 -0.6247414 -0.8468794 -0.9592302 -1.0160540 -1.0447937
+ [7] -1.0593294 -1.2537510 -1.6336268 -1.9295712 -2.1604088 -2.3406052
+[13] -2.4813422 -2.5912973 -2.6772214 -2.7443760 -2.7968659 -2.8378959
+[19] -2.8699691 -2.8950415 -2.9146414
+
+$thet
+[1] -1.00  1.00  1.00 -0.24  6.00  0.20 13.00
+
+$sse
+[1] 0.03
+
+$data
+[1] "Test_data_0.03"
+
+$opt
+[1] -2.9848466  0.8886705  0.6816725  6.5814964  1.9106420  0.2462113
+
+$AIC
+[1]   0.00000   0.00000 -53.60462   0.00000 -47.74049 -59.75665 -47.34296
+
+$Pn
+[1] 6
+
+$Mod
+[1] "P6c"
+
+$val
+[1] 0.493564
+
+$R2
+[1] 0.970624
+
+$call
+BootDark(obj = tmp3, R = 50)
+
+$Bootstrap
+          2.5%    50%  97.5%
+AT      -3.238 -2.935 -2.713
+CC       0.666  0.975  1.414
+1/Tau_c  0.213  0.615  1.537
+Alpha    5.979  6.760  7.851
+Offset   1.376  1.795  2.105
+1/Tau_r  0.148  0.279  0.499
+         0.000  0.000  0.000
+
+$weight
+      AT       CC  1/Tau_c    Alpha   Offset  1/Tau_r          
+1.904762 1.336898 0.755287 0.534188 1.371742 2.849003      Inf 
+
+$valid
+[1] 1 1 1 1 1 1 0
+
+attr(,"class")
+[1] "dark"
+> 
+> 
+> 
+> cleanEx()
+> nameEx("Dark-package")
+> ### * Dark-package
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Dark-package
+> ### Title: Dark: A package to analyse dark adaptation data
+> ### Aliases: Dark-package Dark
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> Time<- seq(0,20)
+> tmp<- TestData(Time)
+> P<-Start(tmp,1000)
+> MSC<-ModelSelect(tmp, P)
+> tmp2<-BestFit(tmp, MSC)
+> tmp3<-MultiStart(tmp2,10)
+> BootDark(tmp3,50) 
+$time
+ [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+$thrs
+ [1] -0.2090699 -0.5840684 -0.6768340 -1.3564997 -0.9073578 -0.9056106
+ [7] -1.0970691 -1.3337675 -1.5774305 -1.8740357 -2.0426068 -2.3729089
+[13] -2.5744450 -2.6688331 -2.5538099 -2.7791017 -2.8885093 -2.9978236
+[19] -3.0250024 -2.5015651 -2.9367752
+
+$resid
+ [1] -0.02353582  0.04067297  0.17004541 -0.39726945  0.10869619  0.13918313
+ [7] -0.03773968 -0.08001655  0.05619633  0.05553555  0.11780201 -0.03230369
+[13] -0.09310273 -0.07753588  0.12341148 -0.03472568 -0.09164339 -0.15992773
+[19] -0.15503323  0.39347643 -0.02213382
+
+$fit
+ [1] -0.1855341 -0.6247414 -0.8468794 -0.9592302 -1.0160540 -1.0447937
+ [7] -1.0593294 -1.2537510 -1.6336268 -1.9295712 -2.1604088 -2.3406052
+[13] -2.4813422 -2.5912973 -2.6772214 -2.7443760 -2.7968659 -2.8378959
+[19] -2.8699691 -2.8950415 -2.9146414
+
+$thet
+[1] -1.00  1.00  1.00 -0.24  6.00  0.20 13.00
+
+$sse
+[1] 0.03
+
+$data
+[1] "Test_data_0.03"
+
+$opt
+[1] -2.9848466  0.8886705  0.6816725  6.5814964  1.9106420  0.2462113
+
+$AIC
+[1]   0.00000   0.00000 -53.60462   0.00000 -47.74049 -59.75665 -47.34296
+
+$Pn
+[1] 6
+
+$Mod
+[1] "P6c"
+
+$val
+[1] 0.493564
+
+$R2
+[1] 0.970624
+
+$call
+BootDark(obj = tmp3, R = 50)
+
+$Bootstrap
+          2.5%    50%  97.5%
+AT      -3.238 -2.935 -2.713
+CC       0.666  0.975  1.414
+1/Tau_c  0.213  0.615  1.537
+Alpha    5.979  6.760  7.851
+Offset   1.376  1.795  2.105
+1/Tau_r  0.148  0.279  0.499
+         0.000  0.000  0.000
+
+$weight
+      AT       CC  1/Tau_c    Alpha   Offset  1/Tau_r          
+1.904762 1.336898 0.755287 0.534188 1.371742 2.849003      Inf 
+
+$valid
+[1] 1 1 1 1 1 1 0
+
+attr(,"class")
+[1] "dark"
+> 
+> 
+> 
+> cleanEx()
+> nameEx("Declutter")
+> ### * Declutter
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Declutter
+> ### Title: Declutter
+> ### Aliases: Declutter
+> ### Keywords: utilities models
+> 
+> ### ** Examples
+> 
+> set.seed(123)
+> Time  <-c(0, 0.02, 1, 2,  3, 3.02,  5, 6, 6.02, 7, 9, 9.02, 11, 
++ 12, 12.02, 13, 15, 15.02, 16, 18, 18.02, 20) 
+> # with duplicated times
+> set.seed(1234)
+> tmp <- TestData(Time, sse=0.05) 
+> ## Not run: plot(tmp$time, tmp$thrs, ylim=c(-4,0))
+> tmp <- Declutter(tmp)
+> ## Not run: points(tmp$time, tmp$thrs, col='red', pch=16)
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("GetData")
+> ### * GetData
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: GetData
+> ### Title: GetData
+> ### Aliases: GetData
+> ### Keywords: utilities models data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> tmp <- GetData()
+> 
+> 
+> 
+> cleanEx()
+> nameEx("H")
+> ### * H
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: H
+> ### Title: This is a simple switch function.
+> ### Aliases: H
+> ### Keywords: math utilities logistic models data
+> 
+> ### ** Examples
+> 
+> 
+> x <- seq(0, 20, by=0.1)
+> k <- 10
+> t <- 10
+> op <- par(las=1, bty='n')
+> ## Not run: plot(x,H(x,k,t), 'l')
+> par(op)
+> 
+> 
+> 
+> graphics::par(get("par.postscript", pos = 'CheckExEnv'))
+> cleanEx()
+> nameEx("ModelSelect")
+> ### * ModelSelect
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: ModelSelect
+> ### Title: ModelSelect
+> ### Aliases: ModelSelect
+> ### Keywords: model optimization
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> tmp<- TestData(0:20)
+> P<-Start(tmp)
+> ModelSelect(tmp,P)
+$AIC
+[1]   0.00000   0.00000 -53.60462   0.00000 -47.69498 -60.76313 -53.17631
+
+$param
+           [,1]       [,2]      [,3]       [,4]       [,5]      [,6]     [,7]
+[1,]  -4.532987  4.3128905 18.275959  0.0000000   0.000000 0.0000000  0.00000
+[2,] -19.593525 14.0135230 34.619707  0.1649964 -32.669774 0.0000000  0.00000
+[3,]  -2.984903  0.8886217  0.681554  6.5814491   1.910688 0.2461895  0.00000
+[4,]  -1.074893  0.8821830  1.547439 -0.1899745   5.147222 0.2291898 15.17585
+
+> 
+> 
+> 
+> cleanEx()
+> nameEx("MultiStart")
+> ### * MultiStart
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: MultiStart
+> ### Title: MultiStart
+> ### Aliases: MultiStart
+> ### Keywords: optimization model
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> Time<- seq(0,20)
+> tmp<- TestData(Time)
+> P<-Start(tmp,1000)
+> MSC<-ModelSelect(tmp, P)
+> tmp2<-BestFit(tmp, MSC)
+> tmp3<-MultiStart(tmp2,10)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("P3")
+> ### * P3
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: P3
+> ### Title: Three parameter model.
+> ### Aliases: P3
+> ### Keywords: models optimization math utilities data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> x <- 0:20
+> a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
+> tmp <- TestData(x, a)
+> y <- tmp$resid
+> P3(TRUE)
+$Pn
+[1] 3
+
+$Mod
+[1] "P3"
+
+> # Describes the model
+> 
+> P3(a)
+[1] 18.29573
+> # The sum of squared residuals
+> 
+> P3(a,x)
+ [1]  0.0000000 -0.6321206 -0.8646647 -0.9502129 -0.9816844 -0.9932621
+ [7] -0.9975212 -0.9990881 -0.9996645 -0.9998766 -0.9999546 -0.9999833
+[13] -0.9999939 -0.9999977 -0.9999992 -0.9999997 -0.9999999 -1.0000000
+[19] -1.0000000 -1.0000000 -1.0000000
+> # The fitted thresholds for given parameters 'theta' and times 'x'
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("P5c")
+> ### * P5c
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: P5c
+> ### Title: Five parameter model.
+> ### Aliases: P5c
+> ### Keywords: models optimization math utilities data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> x <- 0:20
+> a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
+> tmp <- TestData(x, a)
+> y <- tmp$resid
+> P5c(TRUE)
+$Pn
+[1] 5
+
+$Mod
+[1] "P5c"
+
+> # Describes the model
+> 
+> P5c(a)
+[1] 127.1033
+> # The sum of squared residuals
+> 
+> P5c(a,x)
+ [1]  0.0000000 -0.6321206 -0.8646647 -0.9502129 -0.9816844 -0.9932621
+ [7] -0.9975212 -1.2390881 -1.4796645 -1.7198766 -1.9599546 -2.1999833
+[13] -2.4399939 -2.6799977 -2.9199992 -3.1599997 -3.3999999 -3.6400000
+[19] -3.8800000 -4.1200000 -4.3600000
+> # The fitted thresholds for given parameters 'theta' and times 'x'
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("P6c")
+> ### * P6c
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: P6c
+> ### Title: A six parameter model
+> ### Aliases: P6c
+> ### Keywords: models optimization math utilities data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> x <- 0:20
+> a <- c(-2, 2, 1/2, 10, 3, 1/8)
+> # P6c(TRUE)
+> # Describes the model
+> 
+> # P6c(a)
+> # The sum of squared residuals
+> 
+> # P6c(a,x)
+> # The fitted thresholds for given parameters 'a' and times 'x'
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("P7c")
+> ### * P7c
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: P7c
+> ### Title: Seven parameter model
+> ### Aliases: P7c
+> ### Keywords: models optimization math utilities data
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> x <- 0:20
+> a <- c(-1.00,  1.00,  1.00, -0.24,  6.00,  0.20, 13.00)
+> tmp <- TestData(x, a)
+> y <- tmp$resid
+> # P7c(TRUE)
+> # Describes the model
+> 
+> # P7c(a)
+> # The sum of squared residuals
+> 
+> # P7c(a,x)
+> # The fitted thresholds for given parameters 'a' and times 'x'
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("Start")
+> ### * Start
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: Start
+> ### Title: Start
+> ### Aliases: Start
+> ### Keywords: model utilities
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> tmp<-TestData(0:20)
+> Start(tmp, 10)
+              CT        CC         Tau          S2      Alph         S3
+ [1,] -0.2090699 1.3474068 100.0000000 -0.13333333 15.000000 0.13333333
+ [2,] -0.7149974 0.7530038   1.1091337 -0.40000000  1.675556 0.20000000
+ [3,] -0.8414793 0.9016046   0.8341633  0.00000000  6.672222 0.53333333
+ [4,] -0.9679612 1.1988061   1.6545251 -0.06666667 10.003333 0.40000000
+ [5,] -1.3474068 0.4558023   2.1939338 -0.46666667  8.337778 0.33333333
+ [6,] -0.4620337 1.0502053   1.3280146 -0.60000000  0.010000 0.00000000
+ [7,] -1.2209249 0.6044030   0.7421663 -0.26666667 13.334444 0.06666667
+ [8,] -0.5885156 0.0100000   0.9521948 -0.53333333  3.341111 0.26666667
+ [9,] -0.3355518 0.1586008   6.3051401 -0.20000000  5.006667 0.46666667
+[10,] -1.0944431 0.3072015   3.2551923 -0.33333333 11.668889 0.60000000
+          Beta
+ [1,] 17.77778
+ [2,] 16.11111
+ [3,] 15.00000
+ [4,] 19.44444
+ [5,] 20.00000
+ [6,] 18.88889
+ [7,] 15.55556
+ [8,] 18.33333
+ [9,] 16.66667
+[10,] 17.22222
+> 
+> 
+> 
+> cleanEx()
+> nameEx("TestData")
+> ### * TestData
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: TestData
+> ### Title: Data that can be used to test other scripts.
+> ### Aliases: TestData
+> ### Keywords: data dataset
+> 
+> ### ** Examples
+> 
+> set.seed(1234)
+> x <- seq(0,20)
+> tmp <- TestData(x)
+> tmp
+$call
+TestData(x = x)
+
+$time
+ [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+
+$thrs
+ [1] -0.2090699 -0.5840684 -0.6768340 -1.3564997 -0.9073578 -0.9056106
+ [7] -1.0970691 -1.3337675 -1.5774305 -1.8740357 -2.0426068 -2.3729089
+[13] -2.5744450 -2.6688331 -2.5538099 -2.7791017 -2.8885093 -2.9978236
+[19] -3.0250024 -2.5015651 -2.9367752
+
+$resid
+ [1] -0.20906992  0.04805215  0.18783072 -0.40628676  0.07432658  0.08765145
+ [7] -0.09954788 -0.09467941 -0.09776595 -0.15415907 -0.08265220 -0.17292560
+[13] -0.13445112  0.01116459  0.16618925 -0.01910201 -0.08850944 -0.15782368
+[19] -0.14500239  0.41843493  0.02322476
+
+$fit
+ [1]  0.0000000 -0.6321206 -0.8646647 -0.9502129 -0.9816844 -0.9932621
+ [7] -0.9975212 -1.2390881 -1.4796645 -1.7198766 -1.9599546 -2.1999833
+[13] -2.4399939 -2.6799977 -2.7199992 -2.7599997 -2.7999999 -2.8400000
+[19] -2.8800000 -2.9200000 -2.9600000
+
+$thet
+[1] -1.00  1.00  1.00 -0.24  6.00  0.20 13.00
+
+$sse
+[1] 0.03
+
+$val
+[1] 0.02950394
+
+$data
+[1] "Test_data_0.03"
+
+attr(,"class")
+[1] "dark"
+> 
+> 
+> 
+> 
+> cleanEx()
+> nameEx("dark")
+> ### * dark
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: dark
+> ### Title: Dark adaptation data.
+> ### Aliases: dark
+> ### Keywords: datasets
+> 
+> ### ** Examples
+> 
+> data(dark)
+> ## load(dark)
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cleanEx()
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  0.505 0.013 0.52 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')
