@@ -69,7 +69,7 @@ Nelder, J.A.; Mead, R. 1965: A simplex for function minimization. Comput. J. 7, 
 %%  ~~who you are~~
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 %\note{
 %%  ~~further notes~~

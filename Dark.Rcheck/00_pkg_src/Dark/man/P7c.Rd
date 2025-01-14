@@ -61,7 +61,7 @@ T. Lamb and E. Pugh. Dark adaptation and the retinoid cycle of vision. Progress 
 %%  ~~who you are~~
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 %\note{
 %%  ~~further notes~~

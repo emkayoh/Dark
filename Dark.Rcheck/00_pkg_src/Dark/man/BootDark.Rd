@@ -61,7 +61,7 @@ B. Efron. Nonparametric estimates of standard error: The jackknife, the bootstra
 %%  ~~who you are~~
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 %\note{
 %%  ~~further notes~~

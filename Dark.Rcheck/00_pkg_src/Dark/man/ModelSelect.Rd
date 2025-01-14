@@ -48,7 +48,7 @@ Returns a list
 %%  ~~who you are~~
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 %\note{
 %%  ~~further notes~~

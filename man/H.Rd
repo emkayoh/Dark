@@ -43,7 +43,7 @@ The step function: \url{http://en.wikipedia.org/wiki/Heaviside_step_function}
 \author{
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 \note{
 H is a logistic function that maps inputs to a values between zero and one

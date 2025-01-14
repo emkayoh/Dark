@@ -23,7 +23,7 @@ The functions rely upon a *dark* list or object. This object is created by the f
 \author{
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 
 Maintainer: Jeremiah MF Kelly <emkayoh@mac.com>
 }

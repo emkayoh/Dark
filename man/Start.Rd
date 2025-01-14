@@ -51,7 +51,7 @@ These ranges of possible values are complied into an array by sampling without r
 %%  ~~who you are~~
 Jeremiah MF Kelly
 
-Faculty of Life Sciences, The University of Manchester, M13 9PL, UK
+Mumac Ltd, SK7 6NR, GB 
 }
 %\note{
 %%  ~~further notes~~
