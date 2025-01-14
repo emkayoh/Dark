@@ -25,7 +25,7 @@ This work presents independent research funded by the [National Institute for He
 
 
 ### Contact
-The author of the package can be contacted through  *jeremiah.kelly at manchester.ac.uk* or *emkayoh at mac.com*.
+The author of the package can be contacted through  *jeremiah.kelly at mumacltd.com* or *emkayoh at mac.com*.
 
 ## Getting started
 

@@ -47,7 +47,7 @@ The script calculates bootstrap estimates of confidence intervals by sampling th
  \item{out$R2}{the coefficient of determination}
  \item{out$Bootstrap}{bootstrap parameter estimates, 2.5\%, 50\% and 97.5\%}
  \item{out$weight}{the reciprocal of the CI}
- \item{out$valid}{nn indication whether the parameter estimate is valid}
+ \item{out$valid}{an indication whether the parameter estimate is valid}
  \item{out$data}{the source of the data}
  \item{out$call}{updates the call label on the object}
 }
