@@ -84,5 +84,22 @@ BootDark(tmp3,50)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+
+For the BootDark function, which uses bootstrap techniques to compute confidence intervals for parameter estimates, here are some suggested keywords:
+
+Suggested Keywords
+bootstrap: This describes the primary statistical method used in the function.
+inference: The function is used for statistical inference, specifically confidence intervals.
+models: It operates on model parameter estimates.
+utilities: It is a utility function for analysis workflows.
+data: As it processes and analyzes data.
+Updated Keywords Section
+Replace the placeholder keywords in the .Rd file with the following:
+
+plaintext
+Copy code
+\keyword{bootstrap}
+\keyword{inference}
+\keyword{models}
+\keyword{utilities}
+\keyword{data}

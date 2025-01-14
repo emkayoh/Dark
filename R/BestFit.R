@@ -1,10 +1,10 @@
-#' @export 
+#' @export
 
 BestFit <- function(obj, MSC, draw) {
   .GlobalEnv$x <- obj$time
   .GlobalEnv$y <- obj$thrs
   if (missing(draw)) 
-    draw <- F
+    draw <- FALSE
   
   mFn <- c(1, 1, P3, 1, P5c, P6c, P7c)
   idx <- c(3, 5, 6, 7)

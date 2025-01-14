@@ -50,4 +50,5 @@ data(dark)
 ## load(dark)
 }
 \keyword{datasets}
+\keyword{data}
 
