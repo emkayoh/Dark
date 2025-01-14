@@ -6,5 +6,5 @@
 
 ^\.github$
 
-^cran_comments\.md$
+^cran-comments\.md$
 ^CRAN-SUBMISSION$
