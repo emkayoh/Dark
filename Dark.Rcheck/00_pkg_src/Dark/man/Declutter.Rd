@@ -67,5 +67,7 @@ tmp <- Declutter(tmp)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ data }
-\keyword{ utilities }% __ONLY ONE__ keyword per line
+\keyword{math}
+\keyword{utilities}
+\keyword{data}
+\keyword{optimization}

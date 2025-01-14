@@ -8,7 +8,7 @@
 \tabular{ll}{
 Package: \tab Dark\cr
 Type: \tab Package\cr
-Version: \tab 0.9.6\cr
+Version: \tab 0.9.9\cr
 Date: \tab 2015-06-12\cr
 License: \tab GPL-3\cr
 } 

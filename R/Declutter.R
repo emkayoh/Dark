@@ -6,7 +6,7 @@ Declutter <- function(tmp, delta) {
 		delta <- 2/60
 	# button presses within 2s of each other
 	
-	if (class(tmp) == "dark") {
+	if (inherits(tmp, "dark")){
 		if (is.null(tmp$data)) 
 			tmp$data = "unknown"
 
