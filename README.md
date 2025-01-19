@@ -3,6 +3,8 @@ Version 0.9.9
 
 #### To Do
 Test scripts 
+hex sticker
+
 
 
 #### Build Status 
