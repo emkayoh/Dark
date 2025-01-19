@@ -1,3 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+
+.Rapp.history
+CRAN-SUBMISSION
+win_devel/*
