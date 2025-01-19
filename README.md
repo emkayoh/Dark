@@ -21,24 +21,24 @@ Use R6 to incorporate present analysis methods
 
 
 ### Introduction
-This package was originally developed at the University of Manchester, and has since been the basis for development of new functions at Mumac Ltd, to analyse data collected in dark adaptation measurements and experiments.
+This package was initially developed at the University of Manchester and has since been the basis for developing new functions at Mumac Ltd to analyse data collected in dark adaptation measurements and experiments.
 
-Data are collected using custom built laboratory devices, computer controlled CRT units and lately the Rapida&trade; Mk 1. The results are stored usually as text, csv files or an SQLite database.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable to the other functions.
+Data are collected using custom-built laboratory devices, computer-controlled CRT units and lately, the Rapida&trade; Mk 1. The results are usually stored as text, CSV files or an SQLite database.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable to the other functions.
 
-The suite of scripts uses a list referred to as a *dark* object, an initial work through of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your own work. 
+The suite of scripts uses a list referred to as a *dark* object; an initial workthrough of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your work. 
 
 ### Acknowledgement
-This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health. Later work was funded by Mumac Ltd, a spin out company from The University of Manchester. 
+This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health. Later work was funded by Mumac Ltd, a spin-out company from The University of Manchester. 
 
 
 ### Contact
-The author of the package can be contacted through  *jeremiah.kelly at mumacltd.com* or *emkayoh at mac.com*.
+The package's author can be contacted through  *jeremiah.kelly at mumacltd.com* or *emkayoh at mac.com*.
 
 ## Getting started
 
-The scripts rely on the generation of a dark object, `obj`. This is a list with at least two elements; `obj$time` and `obj$thrs`. 
+The scripts rely on generating a dark object, `obj`. This list has at least two elements; `obj$time` and `obj$thrs`. 
 
-Here is a way to do that using copy and paste from a spreadsheet. 
+Here is a way to do that: copy and paste from a spreadsheet. 
 
 Select the time data, then in R type;
 
@@ -46,7 +46,7 @@ Select the time data, then in R type;
 
 `obj$time<- scan()`
 
-then paste and press return. 
+Then paste and press return. 
 
 ```r 
 obj<- NULL
@@ -56,7 +56,7 @@ obj$time<- scan()
 Read 21 items
 ```
 
-repeat for the thresholds
+Repeat for the thresholds
 
 ```r
 obj$thrs<- scan()
@@ -64,7 +64,7 @@ obj$thrs<- scan()
 22: 
 Read 21 items
 ```
-Finally set the class to `dark`
+Finally, set the class to `dark`
 
 ```r
 class(obj)='dark'
@@ -84,7 +84,7 @@ $time
 attr(,"class")
 [1] "dark"
 ```
-email or raise an issue for further help. 
+Email or raise an issue for further help. 
 
 <!--  #### Status
 
