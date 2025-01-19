@@ -1,7 +1,7 @@
 # Dark
 Version 0.9.9
 
-<img src="inst/figures/dark_hex_sticker.png" height="300"/>
+<img align="right"  src="inst/figures/dark_hex_sticker.png" height="200"/>
 
 #### To Do
 Test scripts
@@ -28,7 +28,7 @@ Data are collected using custom-built laboratory devices, computer-controlled CR
 The suite of scripts uses a list referred to as a *dark* object; an initial workthrough of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your work. 
 
 ### Acknowledgement
-This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health. Later work was funded by Mumac Ltd, a spin-out company from The University of Manchester. 
+This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health. Later work was funded by [Mumac Ltd](https://mumacltd.com/), a spin-out company from [The University of Manchester](https://www.manchester.ac.uk/). 
 
 
 ### Contact
