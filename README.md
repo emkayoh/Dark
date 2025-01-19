@@ -1,14 +1,19 @@
 # Dark
 Version 0.9.9
 
+<img src="inst/figures/dark_hex_sticker.png" height="300"/>
+
 #### To Do
-Test scripts 
-hex sticker
+Test scripts
+
+Use R6 to incorporate present analysis methods
 
 
+#### Status
 
-#### Build Status 
-[![Build Status](https://app.travis-ci.com/emkayoh/Dark.svg?branch=master)](https://app.travis-ci.com/emkayoh/Dark)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+#### License
 
 [![License](https://img.shields.io/badge/license-GPL%20%283%29-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0-standalone.html) 
 
@@ -16,14 +21,14 @@ hex sticker
 
 
 ### Introduction
-This package is being developed at the University of Manchester and is used to analyse data collected in dark adaptation measurements and experiments. The data are collected in the Optometry department of the University of Manchester in the Faculty of Life Sciences. The principal investigator is Dr Ian J Murray, other members of the team include Drs Jeremiah Kelly, Humza Tahir and Laura Patryas.
+This package was originally developed at the University of Manchester, and has since been the basis for development of new functions at Mumac Ltd, to analyse data collected in dark adaptation measurements and experiments.
 
-Data are collected using custom built laboratory devices and computer controlled CRT units. The results are stored usually as text or spreadsheet files.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable. 
+Data are collected using custom built laboratory devices, computer controlled CRT units and lately the Rapida&trade; Mk 1. The results are stored usually as text, csv files or an SQLite database.  The first part of the workflow is to create a script that retrieves the data and presents it within `R` in a format that is usable to the other functions.
 
 The suite of scripts uses a list referred to as a *dark* object, an initial work through of the data input is shown below. A first *GetData...* script is shown in `GetData.R`. This script can be used as a template to create a script specific to your own work. 
 
 ### Acknowledgement
-This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
+This work presents independent research funded by the [National Institute for Health Research](https://www.nihr.ac.uk/) Invention for Innovation (NIHR i4i) Programme (ref: II-LB-0712-20001). The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health. Later work was funded by Mumac Ltd, a spin out company from The University of Manchester. 
 
 
 ### Contact
@@ -31,7 +36,7 @@ The author of the package can be contacted through  *jeremiah.kelly at mumacltd.
 
 ## Getting started
 
-The scripts rely on the generation of a dark object, `obj`. This is just a list with at least two elements; `obj$time` and `obj$thrs`. 
+The scripts rely on the generation of a dark object, `obj`. This is a list with at least two elements; `obj$time` and `obj$thrs`. 
 
 Here is a way to do that using copy and paste from a spreadsheet. 
 

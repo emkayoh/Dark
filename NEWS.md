@@ -5,3 +5,7 @@
 * Responded to warning from CRAN to update Rd files.    JMF Kelly
 * Some spelling mistakes corrected.   JMF Kelly
 * Minor edit to `Declutter.R` made to correct class comparison with a string   JMF Kelly
+
+## 2025-01-19
+
+* added hex sticker as .png + code
